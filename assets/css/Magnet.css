@@ -1,0 +1,4519 @@
+/*
+ 
+
+
+ *********************************************************************************************************************************************
+ *                                   ========== Magnet Framework Tools and Style ==========                                                  *
+ *********************************************************************************************************************************************
+
+ ******************************************************* BEGIN LICENSE BLOCK *****************************************************************
+ *                                                                                                                                           *       
+ *                                 ---             ---             -  	          -----------------                                          *
+ *                                 ----           ----            ---	         /-----------------\                                         *
+ *                                 -----         -----           -----	         -------------------                                         *
+ *                                 ------       ------          -------	         ---                                                         *
+ *                                 -------     -------         ---------	     ---                                                         *
+ *                                 --------   --------    	  ----/ \----	     ---    ----                                                 *
+ *                                 --- ----- ----- ---   	 ----/   \----       ---    -  ----------                                        *
+ *                                 ---  ---------  ---  	---------------      ---    -  ----------                                        *
+ *                                 ---   -------   ---	   ------   --------     ---    ----      ---                                        *
+ *                                 ---    -----    ---    ------     --------    -------------------                                         *
+ *                                 ---     ---     ---   ------       --------   \----------------/                                          *
+ *                                 ---      -      ---  ------         --------   ----------------                                           *
+ *                             =========================================================================                                     *
+ *                                                                                                                                           *
+ *                                                                                                                                           *
+ * Distributed under the BSD license:                                                                                                        *
+ *                                                                                                                                           *
+ * Copyright (c) 2019,  Mostafa Mahmoud El-sherbiniy , mostafa201272@yahoo.com , https://www.facebook.com/Eng.Moustafa.Mahmoud.Elsherbiniy.  *
+ * All rights (R) reserved .                                                                                                                 *
+ *                                                                                                                                           *
+ * Redistribution and use in source and binary forms, with or without                                                                        *
+ * modification, are permitted provided that the following conditions are met:                                                               *
+ *     * Redistributions of source code must retain the above copyright                                                                      *
+ *       notice, this list of conditions and the following disclaimer.                                                                       *
+ *     * Redistributions in binary form must reproduce the above copyright                                                                   *
+ *       notice, this list of conditions and the following disclaimer in the                                                                 *
+ *       documentation and/or other materials provided with the distribution.                                                                *
+ *     * Neither the name of Ajax.org B.V. nor the                                                                                           *
+ *       names of its contributors may be used to endorse or promote products                                                                *
+ *       derived from this software without specific prior written permission.                                                               *
+ *                                                                                                                                           *
+ * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND                                                           *
+ * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED                                                             *
+ * WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE                                                                    *
+ * DISCLAIMED. IN NO EVENT SHALL AJAX.ORG B.V. BE LIABLE FOR ANY                                                                             *
+ * DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES                                                                *
+ * (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;                                                              *
+ * LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND                                                               *
+ * ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT                                                                *
+ * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS                                                             *
+ * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.                                                                              *
+ *                                                                                                                                           *
+ * ********************************************************* END LICENSE BLOCK ***************************************************************
+
+ */
+
+
+
+/*
+    ***********************************************************************
+    ======              Start Of Main Options                       =======
+    ***********************************************************************
+*/
+/* [ 1 ] font-family: 'Monoton', cursive; //!important */ 
+@import url('https://fonts.googleapis.com/css?family=Monoton&display=swap');
+/* [ 2 ] font-family: 'Raleway', sans-serif; */
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap&subset=latin-ext');
+/* [ 3 ] font-family: 'Crete Round', serif; */
+@import url('https://fonts.googleapis.com/css?family=Crete+Round:400,400i&display=swap&subset=latin-ext');
+/* [ 4 ] font-family: 'Poppins', sans-serif;  */
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900&display=swap&subset=devanagari,latin-ext');
+/* [ 5 ] font-family: 'Source Sans Pro', sans-serif; */
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i&display=swap&subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    outline: none;
+}
+/* Chrome , Safarie  , opera , MS Explorer*/
+::-webkit-scrollbar{
+    background: transparent;
+    width: 5px;
+    height: 5px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #aaa;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:active,
+::-webkit-scrollbar-thumb:focus{
+    background-color: #aaa;
+}
+::-webkit-scrollbar-thumb:hover{
+  background-color: #aaa;
+}
+body{
+    min-height: 100vh;
+    position: relative;
+}
+
+/*
+    ***********************************************************************
+    ======              End Of Main Options                         =======
+    ***********************************************************************
+*/
+
+
+/* 
+    ****************************************************************************
+    =======                      Start Of Side Nav Bar                   =======
+    ****************************************************************************
+*/
+
+/* Magnet Side Bar Body */
+.Magnet-SideNav-Body{
+    min-height: 100vh;
+    position: relative;
+}
+.Magnet-sidebar{
+    width: 260px;
+    height: 100%;
+    display: block;
+    font-weight: 200;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.Magnet-Page-Body-light,
+.Magnet-Frame-Light-BGcolor{
+    background-color: #fbf9fa;
+}
+.Magnet-Page-Body-dark,
+.Magnet-Frame-Dark-BGcolor{
+    background-color: #121212;
+}
+
+/* Side Nav Bar Head */
+.Magnet-sidebar .Magnet-sidebar-wrapper .Magnet-heading {
+  background-color: transparent;
+  padding: 20px 0px 10px 0px;
+  overflow: hidden;
+  margin-bottom: 5px;
+}
+.Magnet-sidebar .Magnet-sidebar-wrapper .Magnet-heading .Magnet-img {
+    border-radius: 50%;
+    width: 50%;
+    transform: translate(50%);
+    display: block;
+    margin-bottom: 10px;
+    padding: 5px;
+    
+}
+/* Side Nav Bar Header Brand*/
+.Magnet-brand-logo{
+    width: 50%;
+    display: block;
+    transform: translate(50%);
+    font-size: 120px;
+}
+.Magnet-brand-logo-light-Color{
+    color: #fff;
+}
+.Magnet-brand-logo-dark-Color{
+    color: #111;
+}
+.Magnet-brand-span,
+.Magnet-brand-span-dark{
+    color: #111;
+    font-weight: 900;
+    font-size: 30px;
+    text-shadow: 5px 5px 5px #ccc;
+}
+.Magnet-brand-span-dark{
+    color: #fff;
+    text-shadow: 0px 5px 5px #000;
+}
+
+/* Side Nav Bar Lists */
+.Magnet-sidebar .Magnet-sidebar-wrapper .Magnet-categories{
+    padding-left: 0px;
+}
+.Magnet-sidebar .Magnet-sidebar-wrapper .Magnet-categories .Magnet-categories-List{
+    position: relative;
+    width: 100%;
+    padding:10px;
+    margin-top: 5px;
+    overflow: hidden;
+    cursor: pointer;
+}
+.Magnet-sidebar .Magnet-sidebar-wrapper .Magnet-categories .Magnet-categories-List .Magnet-ListHeader .Magnet-ListHeader-title{
+    font-size: 14px;
+    font-weight: 700;
+}
+.Magnet-sidebar .Magnet-sidebar-wrapper .Magnet-categories .Magnet-categories-List .Magnet-ListHeader .Magnet-ListHeader-dropArrow{
+    position: absolute;
+    left: 215px;
+    top: 11px;
+}
+.Magnet-sidebar .Magnet-sidebar-wrapper .Magnet-categories .opend {
+    transition: all 0.5s ease-in-out;
+}
+.Magnet-sidebar .Magnet-sidebar-wrapper .Magnet-categories .opend .Magnet-ListHeader-dropArrow{
+    transform: rotate(-90deg);
+}
+
+/* Start dropdown menu */
+.Magnet-sidebar .Magnet-sidebar-wrapper .Magnet-categories .Magnet-CatList-dropMenu {
+    list-style: none;
+    display: none;
+    padding-top: 5px;
+}
+.Magnet-sidebar .Magnet-sidebar-wrapper .Magnet-categories .Magnet-CatList-dropMenu .Magnet-CatMenu{  
+    padding:5px 20px;
+    transition: all 0.3s ease-in-out;
+    position: relative
+}
+.Magnet-sidebar .Magnet-sidebar-wrapper .Magnet-categories .Magnet-CatList-dropMenu .Magnet-CatMenu .Magnet-CatMenu-Counter{
+    padding: 2px 5px;
+    border-radius: 0px 10px;
+    font-size: 12px;
+    position: absolute;
+    left: 205px;
+}
+
+/* Side nav bar Media [ small Screens ] */
+@media (max-width: 991px) {
+    .Magnet-sidebar {
+        left: 0 !important;
+        right: auto;
+        transform: translate3d(-262px, 0, 0) !important;
+        transition: all 0.5s cubic-bezier(0.685, 0.0473, 0.346, 1);
+    }
+    .nav-open .Magnet-sidebar{
+        transform: translate3d(0px, 0, 0) !important;
+        transition: all 0.5s cubic-bezier(0.685, 0.0473, 0.346, 1);
+    }
+      
+}
+
+
+/* 
+    ****************************************************************************
+    =======                      End Of Side Nav Bar                     =======
+    ****************************************************************************
+*/
+
+
+/* 
+    ****************************************************************************
+    =======                Start Of Magnet Main Body                     =======
+    ****************************************************************************
+*/
+
+/* Main Panal [ Page Content ] */
+.Magnet-main-panel-sidenav{   
+    position: relative;
+    float: right;
+    width: calc(100% - 260px);
+    min-height: 100%;
+}
+
+/* ==== Magnet Main Panel Top and Bottom Navs  ========== */
+.Magnet-main-panel-sidenav .Magnet-TopNav,
+.Magnet-main-panel-sidenav .Magnet-BottomNav{
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    min-height: 50px;
+
+}
+.Magnet-main-panel-sidenav .Magnet-TopNav button{
+    float: left;
+    border: 0px;
+    padding: 5px 10px;
+    display: none;
+    
+
+}
+.Magnet-main-panel-sidenav .Magnet-TopNav button:focus{
+    outline: 0px auto #343a40;
+}
+
+/* Navbar Top Or Bottom Brand */
+.Magnet-Navbar-brand-logo{
+    display: inline-block;
+    font-size: 20px;
+}
+.Magnet-Navbar-brand-Title{
+    display: inline-block;
+    
+}
+.Magnet-Navbar-dark-brand-span,
+.Magnet-Navbar-light-brand-span{
+    color: #111;
+    font-size: 20px;
+    font-weight: 900;
+    text-shadow: 0px 2px 3px #ccc;
+}
+.Magnet-Navbar-light-brand-span{
+    color: #fff;
+    text-shadow: 0px 5px 5px #000;
+}
+
+/* Magnet Frame */
+.Magnet-main-panel-sidenav .Magnet-Multi-Nav-Frame{
+    position: relative;
+    top: 50px;
+    width: 100%;
+    height: calc(100vh - 100px);
+    overflow-x: scroll;
+    overflow-y: scroll;
+    z-index: 1;
+}
+/* Magnet Frame */
+.Magnet-main-panel-sidenav .Magnet-Multi-Nav-Frame .Magnet-Multi-Nav-Frame-Preview-Box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 5px 10px;
+}
+
+/*  Magnet Main Panal Media [ Small Screen ] */
+@media (max-width: 991px) {   
+    .nav-open .Magnet-main-panel-sidenav{
+        position: absolute;
+        right: 0;
+        transform: translate3d(250px, 0, 0) !important;
+        transition: all 0.5s cubic-bezier(0.685, 0.0473, 0.346, 1);
+    }
+    
+    .Magnet-main-panel-sidenav{
+        width: 100%;
+    }
+    
+    .Magnet-main-panel-sidenav .Magnet-TopNav button{
+        display: inline-block;
+    }
+
+}
+
+
+/* 
+    ****************************************************************************
+    =======                  End Of Magnet Main Body                     =======
+    ****************************************************************************
+*/
+
+/* 
+    ****************************************************************************
+    =======        Start Of Magnet Navigations Menus                     =======
+    ****************************************************************************
+*/
+
+/* [ 1 ] Magnetic System Menus  */
+.Magnet-Navbar-Sys-Btn,
+.Magnet-Bottom-Nav-Generated-Menu{
+    list-style: none;
+    display: inline-block;
+    margin-right: 50px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.Magnet-Navbar-Sys-Btn .Magnet-Navbar-btn,
+.Magnet-Navbar-Sys-Btn .Magnet-Navbar-dark-btn{
+    display: inline-block;
+    margin-left: 5px;
+    font-size: 14px;
+    background-color: #fd0054;
+    border-radius: 50px;
+    color: #fff;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+.Magnet-Navbar-Sys-Btn .Magnet-Navbar-btn:hover{
+    box-shadow: 0px 2px 4px #ccc;
+    transform: scale(1.05)
+}
+.Magnet-Navbar-Sys-Btn .Magnet-Navbar-dark-btn:hover{
+    box-shadow: 0px 5px 5px #000;
+    transform: scale(1.05)
+}
+.Magnet-Nav-Generated-Menu-links{
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 10px;
+    font-weight: 600;
+}
+.Magnet-Nav-Generated-Menu-links span{
+    color: #fd0054;
+}
+
+
+/* 
+    ****************************************************************************
+    =======          End Of Magnet Navigations Menus                     =======
+    ****************************************************************************
+*/
+
+
+
+/* 
+    ****************************************************************************
+    =======                  Start Of ToolBox Options                    =======
+    ****************************************************************************
+*/
+.Magnet-ToolBox{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    margin: 0px;
+    padding: 0px;
+}
+.Vertical-Box-Options{
+    width: 300px;
+}
+.Horizontal-Box-Options{
+    width: 90%;
+}
+
+/* Header*/
+.Magnet-ToolBox .Magnet-ToolBox-Header,
+.Magnet-super-panale .Super-Box-Options-leftPanal .Magnet-ToolBox-Header,
+.Magnet-super-panale .Super-Box-Options-rightPanal .Magnet-ToolBox-Header{
+    width: 100%;
+    height: 20px;
+    background-color: #111;
+    color: #fff;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    padding: 2px 15px;
+}
+
+.Magnet-ToolBox .Magnet-ToolBox-Header div,
+.Magnet-super-panale .Super-Box-Options-leftPanal .Magnet-ToolBox-Header div,
+.Magnet-super-panale .Super-Box-Options-rightPanal .Magnet-ToolBox-Header div{
+    display: inline-block;
+}
+
+.Magnet-ToolBox .Magnet-ToolBox-Header .Magnet-ToolBox-Header-title,
+.Magnet-super-panale .Super-Box-Options-leftPanal .Magnet-ToolBox-Header .Magnet-ToolBox-Header-title,
+.Magnet-super-panale .Super-Box-Options-rightPanal .Magnet-ToolBox-Header .Magnet-ToolBox-Header-title{
+    font-size: 12px;
+    font-weight: 700;
+    float: left;
+}
+
+.Magnet-ToolBox .Magnet-ToolBox-Header .Magnet-ToolBox-Header-Controls,
+.Magnet-super-panale .Super-Box-Options-leftPanal .Magnet-ToolBox-Header .Magnet-ToolBox-Header-Controls,
+.Magnet-super-panale .Super-Box-Options-rightPanal .Magnet-ToolBox-Header .Magnet-ToolBox-Header-Controls{
+    
+    color: #fff;
+    font-size: 8px;
+    float: right;
+    position: absolute;
+    right: 10px;
+    top: 5px;
+}
+
+.Magnet-ToolBox .Magnet-ToolBox-Header .Magnet-ToolBox-Header-Controls div,
+.Magnet-super-panale .Super-Box-Options-leftPanal .Magnet-ToolBox-Header .Magnet-ToolBox-Header-Controls div,
+.Magnet-super-panale .Super-Box-Options-rightPanal .Magnet-ToolBox-Header .Magnet-ToolBox-Header-Controls div{
+    margin-left: 2px;
+    cursor: pointer;
+}
+
+.Magnet-ToolBox .Magnet-ToolBox-Header .Magnet-ToolBox-Header-Controls .Magnet-ToolBox-Header-Controls-Minimise,
+.Magnet-super-panale .Super-Box-Options-leftPanal .Magnet-ToolBox-Header .Magnet-ToolBox-Header-Controls .Magnet-ToolBox-Header-Controls-Minimise,
+.Magnet-super-panale .Super-Box-Options-rightPanal .Magnet-ToolBox-Header .Magnet-ToolBox-Header-Controls .Magnet-ToolBox-Header-Controls-Minimise{
+    margin-right: 3px;
+    background-color: #ffc107;
+    padding: 0px 2px;
+    border-radius: 50%;
+    text-align: center;
+    position: relative;
+    color: #ffc107;
+}
+
+
+.Magnet-ToolBox .Magnet-ToolBox-Header .Magnet-ToolBox-Header-Controls .Magnet-ToolBox-Header-Controls-Minimise:hover,
+.Magnet-super-panale .Super-Box-Options-leftPanal .Magnet-ToolBox-Header .Magnet-ToolBox-Header-Controls .Magnet-ToolBox-Header-Controls-Minimise:hover,
+.Magnet-super-panale .Super-Box-Options-rightPanal .Magnet-ToolBox-Header .Magnet-ToolBox-Header-Controls .Magnet-ToolBox-Header-Controls-Minimise:hover{
+    color:#111;
+}
+
+.Magnet-ToolBox .Magnet-ToolBox-Header .Magnet-ToolBox-Header-Controls .Magnet-ToolBox-Header-Controls-close,
+.Magnet-super-panale .Super-Box-Options-leftPanal .Magnet-ToolBox-Header .Magnet-ToolBox-Header-Controls .Magnet-ToolBox-Header-Controls-close,
+.Magnet-super-panale .Super-Box-Options-rightPanal .Magnet-ToolBox-Header .Magnet-ToolBox-Header-Controls .Magnet-ToolBox-Header-Controls-close{
+    background-color: #F44336;
+    padding: 0px 3px;
+    border-radius: 50%;
+    text-align: center;
+    position: relative;
+    color: #F44336;
+}
+
+
+.Magnet-ToolBox .Magnet-ToolBox-Header .Magnet-ToolBox-Header-Controls .Magnet-ToolBox-Header-Controls-close:hover,
+.Magnet-super-panale .Super-Box-Options-leftPanal .Magnet-ToolBox-Header .Magnet-ToolBox-Header-Controls .Magnet-ToolBox-Header-Controls-close:hover,
+.Magnet-super-panale .Super-Box-Options-rightPanal .Magnet-ToolBox-Header .Magnet-ToolBox-Header-Controls .Magnet-ToolBox-Header-Controls-close:hover{
+    color:#111;
+}
+
+/* Body */
+.Magnet-ToolBox  .Magnet-ToolBox-Body{
+    width: 100%;
+    max-height: 90vh;
+    overflow-y: scroll;
+    background-color: rgba(0,0,0,0.5);
+    padding: 10px;
+}
+
+/* Body Inputs */
+
+    /* [ 1 ] Just input */
+.Magnet-ToolBox  .Magnet-ToolBox-Body .Magnet-ToolBox-inputs{
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.Magnet-ToolBox  .Magnet-ToolBox-Body .Magnet-ToolBox-inputs .txtinput{
+    width: 100%;
+    height: 25px;
+    padding: 2px 10px;
+    font-size: 12px;
+    border: 0px solid #000;
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 10px;
+    color: #fff;
+}
+.Magnet-ToolBox  .Magnet-ToolBox-Body .Magnet-ToolBox-inputs .txtinput::placeholder{
+    color: #e1e1e1;
+}
+    
+    /* [ 2 ] input with lable */
+
+.Magnet-ToolBox  .Magnet-ToolBox-Body .input-lable{
+   display: block;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 12px;
+}
+.Magnet-ToolBox  .Magnet-ToolBox-Body .input-lable .Boxlbl{
+    margin-left: 10px;
+    font-weight: 700;
+    color: #fff;
+}
+
+    /* [ 3 ]  Menu */
+.Magnet-ToolBox  .Magnet-ToolBox-Body .Magnet-ToolBox-menu{
+    width: 100%;
+    font-size: 12px;
+}
+.Magnet-ToolBox  .Magnet-ToolBox-Body .Magnet-ToolBox-menu ul{
+    list-style: none;
+}
+.Magnet-ToolBox  .Magnet-ToolBox-Body .Magnet-ToolBox-menu ul .Magnet-ToolBox-menu-option-Box{
+    padding: 3px 10px;
+    background: linear-gradient(to top , rgba(0,0,0,.9) , #495057);
+    border-radius: 20px;
+    color: #fff;
+    position: relative;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.Magnet-ToolBox  .Magnet-ToolBox-Body .Magnet-ToolBox-menu ul .Magnet-ToolBox-menu-option-Box .Magnet-option-Box-Header-dropArrow{
+    position: absolute;
+    right: 5%;
+    
+}
+.Magnet-ToolBox  .Magnet-ToolBox-Body .Magnet-ToolBox-menu ul .Magnet-option-Box-dropMenu{
+    display: none;
+    width: 100%;
+    background-color: #212529;
+    padding: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.border-edit-radius{
+    border-top-left-radius: 10px !important;
+    border-top-right-radius: 10px !important;
+    border-bottom-left-radius: 0px !important;
+    border-bottom-right-radius: 0px !important;
+}
+.arrow-rotate{
+    transform:rotate(-90deg);
+}
+
+
+    /* [ 4 ] Options */
+.Magnet-ToolBox-inputs .Option{
+    background: linear-gradient(to top,#495057 ,#343a40);
+    border-radius: 20px;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.5s;
+}
+.Magnet-ToolBox-inputs .Option:hover{
+    background: linear-gradient(to top,#fd0054 ,#fd0054);
+}
+
+/* Footer */
+.Magnet-ToolBox  .Magnet-ToolBox-footer,
+.Magnet-super-panale .Super-Box-Options-leftPanal .Magnet-ToolBox-footer,
+.Magnet-super-panale .Super-Box-Options-rightPanal .Magnet-ToolBox-footer{
+    width: 100%;
+    height: 15px;
+    background-color: #111;
+    color: #fff;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    padding: 2px 15px;
+    font-size: 10px;
+    text-align: center;
+}
+
+/* Super Panal */
+.Magnet-super-panale{
+    width: 90%;
+    height: 90%;
+    position: fixed;
+    top: 2.5%;
+    left: 5%;
+}
+.Magnet-super-panale .Super-Box-Options-leftPanal{
+    width: 300px;
+    height: 100%;
+    float: left;
+}
+.Magnet-super-panale .Super-Box-Options-rightPanal{
+    width: calc(100% - 310px);
+    height: 100%;
+    float: right;
+}
+
+.Magnet-super-panale .Super-Box-Options-leftPanal .Magnet-ToolBox-Body,
+.Magnet-super-panale .Super-Box-Options-rightPanal .Magnet-ToolBox-Body{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    position: relative;
+}
+
+/* Applay Button */
+.Magnet-ToolBox .Magnet-ToolBox-Body .Magnet-ToolBox-Btn{
+    width: 100%;
+    padding: 5px 10px;
+    margin-top: 10px;
+    background: linear-gradient(to top , #343a40 , #495057);
+    color: #fff;
+    font-weight: 700;
+    font-size: 12px;
+    text-align: center;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.Magnet-ToolBox .Magnet-ToolBox-Body .Magnet-ToolBox-Btn:hover{
+    background: linear-gradient(to top , #383d41 , rgba(0,0,0,.9));
+}
+
+
+/* 
+    ****************************************************************************
+    =======                    End Of ToolBox Options                    =======
+    ****************************************************************************
+*/
+
+/* 
+    ****************************************************************************
+    =======                Start Of Buttons Style                       =======
+    ****************************************************************************
+*/
+
+
+/* Start of curtain button */
+.Magnet-btn{
+    display: inline-block;
+    padding:5px 10px;
+    margin: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+    
+}
+.Magnet-btn-curtain{
+    border: 1px solid #2196f3;
+    font-size: 16px;
+    padding: 10px 20px;
+    position: relative;
+    overflow: hidden;
+    
+}
+.Magnet-btn-curtain::before{
+    content: "";
+    position: absolute;
+    left: 0px;
+    height: 0%;
+    width: 100%;
+    background-color: #2196f3;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+.curtain-1,
+.curtain-2,
+.curtain-3:hover,
+.curtain-4:hover{
+    color: #2196f3;
+}
+.curtain-1:hover,
+.curtain-2:hover,
+.curtain-3,
+.curtain-4{
+    color: #fff;
+}
+
+.curtain-1::before,
+.curtain-3::before{
+    top: 0px;
+    border-radius: 0 0 50% 50%;
+}
+
+.curtain-2::before,
+.curtain-4::before{
+    bottom: 0px;
+    border-radius: 50% 50% 0 0;
+}
+
+.curtain-3::before,
+.curtain-4::before{
+    height: 180%;
+}
+
+.curtain-1:hover::before,
+.curtain-2:hover::before{
+    height: 180%;
+}
+
+.curtain-3:hover::before,
+.curtain-4:hover::before{
+    height: 0%;
+}
+/* end of curtain button */
+
+/* Start of loading button */
+.Magnet-btn-loading{
+    background-color: #03a9f4;
+    color: #fff;
+    padding: 10px 30px;
+    font-size: 30px;
+    box-shadow: 0px 20px 50px rgb(0,0,0,0.5);
+    position: relative;
+    overflow: hidden;
+}
+.Magnet-btn-loading span:nth-child(1){
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(to right , #0c002b, #1779ff);
+    animation: topSpanMotion 1s ease-in-out infinite;
+}
+@keyframes topSpanMotion{
+    0%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(100%);
+    }
+}
+.Magnet-btn-loading span:nth-child(2){
+    position: absolute;
+    top: 0px;
+    right:0px;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(to bottom , #0c002b, #1779ff);
+    animation: rightSpanMotion 1s ease-in-out infinite;
+    
+}
+@keyframes rightSpanMotion{
+    0%{
+        transform: translateY(-100%);
+    }
+    100%{
+        transform: translateY(100%);
+    }
+}
+.Magnet-btn-loading span:nth-child(3){
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(to left , #0c002b, #1779ff);
+    animation: bottomSpanMotion 1s ease-in-out infinite ;
+}
+@keyframes bottomSpanMotion{
+    0%{
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+}
+.Magnet-btn-loading span:nth-child(4){
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(to top , #0c002b, #1779ff);
+    animation: leftSpanMotion 1s ease-in-out infinite;
+}
+@keyframes leftSpanMotion{
+    0%{
+        transform: translateY(100%);
+    }
+    100%{
+        transform: translateY(-100%);
+    }
+}
+
+.Magnet-btn-loading span.start{
+    animation-direction: normal;
+}
+.Magnet-btn-loading span.start-end{
+    animation-direction: alternate-reverse;
+}
+.Magnet-btn-loading span.circle{
+    animation-delay: 0.5s;
+}
+
+/* end of loading button */
+
+/* Start Of Open button */
+.Magnet-btn-open{
+    position: relative;
+    color: #03a9f4;
+    font-size: 20px;
+    padding: 10px 30px;
+    border: 2px solid #03a9f4;
+    transition:all 0.5s ease-in-out; 
+    overflow: hidden;
+    background-color: transparent;
+}
+.Magnet-btn-open:hover{
+    color: #fff;
+}
+.Magnet-btn-open::before{
+    content: "";
+    position: absolute;
+    background-color: #03a9f4;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: -1;
+    transition:all 0.5s ease-in-out; 
+}
+.open-1::before{
+    width: 0px;
+    height: 100%;
+}
+.open-1:hover::before{
+    width: 100%;
+}
+
+.open-2::before{
+    width: 100%;
+    height: 0px;
+}
+.open-2:hover::before{
+    height: 100%;
+}
+
+.open-3::before{
+    width: 100%;
+    height: 0px;
+    transform: translate(-50%,-50%) rotate(45deg);
+}
+.open-3:hover::before{
+    height: 500%;
+}
+
+.open-4::before{
+    width: 100%;
+    height: 0px;
+    transform: translate(-50%,-50%) rotate(-45deg);
+}
+.open-4:hover::before{
+    height: 500%;
+}
+
+/* end Of Open button */
+
+/* Start Of 3Ds button */
+.Magnet-btn-3d{
+    position: relative;
+    color: #03a9f4;
+    padding: 20px 20px 20px 30px;
+    font-size: 20px;
+    letter-spacing: 5px;
+    transform: 0.5s;
+}
+.Magnet-btn-3d:hover{
+    background-color: #03a9f4;
+    color: #fff;
+    box-shadow: -30px 3px 50px rgba(0,0,0,0.4);
+    
+    transition-delay: 0.5s;
+}
+.Magnet-btn-3d::before,
+.Magnet-btn-3d::after{
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 100%;
+    background-color: #03a9f4;
+    transition: 0.5s;
+}
+.Magnet-btn-3d::before{
+    top: 0px;
+    left: 0px;
+}
+.Magnet-btn-3d::after{
+    top: 0px;
+    right: 0px;
+}
+.Magnet-btn-3d:hover::before{
+    width: 100%;
+    opacity: 0.4;
+    transform: translate(5px, -5px);
+    box-shadow: +2px 2px 2px rgba(0,0,0,0.5);
+    transition-delay: 0s, 0.5s, 1s,1.5s;
+}
+.Magnet-btn-3d:hover::after{
+    width: 100%;
+    opacity: 0.1;
+    transform: translate(10px, -10px);
+    box-shadow: +2px 2px 2px rgba(0,0,0,0.5);
+    transition-delay: 0s, 0.5s, 1s,1.5s;
+}
+
+
+.btn-3D-left-rotat:hover{
+    transform: rotate(-30deg) skew(25deg);
+}
+.btn-3D-right-rotat:hover{
+    transform: rotate(30deg) skew(-25deg);
+}
+
+/* End Of 3Ds button */
+
+/* Start of Poly button */
+.Magnet-btn-Poly{
+    position: relative;
+    padding: 15px 60px;
+    font-size: 25px;
+    border-radius: 35px;
+    overflow: hidden;
+    
+}
+.Magnet-btn-Poly:hover{
+    color: #fff;
+    transition-delay: 1s;
+}
+
+.Magnet-btn-Poly::before,
+.Magnet-btn-Poly::after{
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%) scale(0.6);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    z-index: -1;
+    opacity: 0;
+    transition-delay: 0s,0s;
+    transition-duration: 1s , 0.5s;
+}
+.Magnet-btn-Poly::before{
+    left: 20%;
+    transition-property: left , transform;
+}
+.Magnet-btn-Poly::after{
+    right: 20%;
+    transition-property: right , transform;
+}
+.Magnet-btn-Poly:hover::before{
+    left: 10px;
+    transform: translateY(-50%) scale(30);
+    transition-delay: 0s,1s;
+    opacity: 1;
+}
+.Magnet-btn-Poly:hover::after{
+    right: 10px;
+    transform: translateY(-50%) scale(30);
+    transition-delay: 0s,1s;
+    opacity: 1;
+}
+
+.Poly{
+    border-bottom:2px solid #e91e63;
+    border-right:2px solid #e91e63;
+    border-top:2px solid #111;
+    border-left:2px solid #111; 
+    color: #111;
+}
+.Poly::before{
+    background-color: #111;
+}
+.Poly::after{
+    background-color: #e91e63;
+}
+.Poly:hover::after{
+    transform: translateY(-50%) scale(20);
+}
+
+/* End of Poly button */
+
+/* Start of Sells button*/
+.Magnet-btn-sells{
+    font-size: 20px;
+}
+.Magnet-btn-sells div{
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    line-height: 60px;
+    overflow: hidden;
+}
+.Magnet-btn-sells div:nth-child(1){
+    width: 150px;
+    height: 60px;
+}
+.Magnet-btn-sells div:nth-child(2){
+    width: 60px;
+    height: 60px;
+}
+.Magnet-btn-sells div:nth-child(1) div,
+.Magnet-btn-sells div:nth-child(2) div{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.Magnet-btn-sells div:nth-child(1) div::before,
+.Magnet-btn-sells div:nth-child(2) div::before{
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+}
+.Magnet-btn-sells:hover div:nth-child(1) div::before{
+    transform: translateX(-100%);
+}
+.Magnet-btn-sells:hover div:nth-child(2) div::before{
+    transform: translateX(100%);
+}
+.Magnet-btn-sells div span{
+    position: relative;
+    transition: 0.2s;
+}
+
+
+.Sell .Sell-title{
+    background-color: #fff;
+    border:2px solid #03a9f4;
+}
+.Sell .Sell-icon{
+    background-color: #03a9f4;
+    border:2px solid #03a9f4;
+}
+.Sell .Sell-title::before{
+    background-color: #03a9f4;
+}
+.Sell .Sell-icon::before{
+    background-color: #fff;
+     
+}
+.Sell div:nth-child(1) span{
+    color:#fff;
+}
+.Sell div:nth-child(2) span{
+    color:#03a9f4;
+}
+.Sell:hover div:nth-child(1) span{
+    color:#03a9f4;
+}
+.Sell:hover div:nth-child(2) span{
+    color:#fff;
+}
+
+/* End of Sells button*/
+
+
+
+
+/* 
+    ****************************************************************************
+    =======                     End Of Buttons Style                    =======
+    ****************************************************************************
+*/
+
+
+
+/*
+    ***********************************************************************
+    ======              Start Of Editor Panal                         =======
+    ***********************************************************************
+*/
+.Magnet-Editor{
+    width: 80%;
+    height: 80vh;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.Magnet-Editor-header,
+.Magnet-Editor-footer{
+    width: 100%;
+    height: 30px;
+    background-color: #111;
+    color: #fff;
+    text-align: center
+}
+.Magnet-Editor-header{
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+.Magnet-Editor-footer{
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.Magnet-Editor-header > div{
+    font-size: 14px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.Magnet-Editor-header div{
+    display: inline-block;
+}
+.Magnet-Editor-header .Title{
+    margin-top: 5px;
+}
+.Magnet-Editor-header .Controls{
+    float: right;
+    margin-top: 5px;
+}
+.Magnet-Editor-header .Controls .Magnet-ToolBox-Header-Controls-Minimise{
+    margin-right: 5px;
+    background-color: #ffc107;
+    padding: 0px 3px;
+    border-radius: 50%;
+    text-align: center;
+    position: relative;
+    color: #ffc107;
+}
+.Magnet-Editor-header .Controls .Magnet-ToolBox-Header-Controls-close{
+    background-color: #F44336;
+    padding: 0px 5px;
+    border-radius: 50%;
+    text-align: center;
+    position: relative;
+    color: #F44336;
+}
+.Magnet-Editor-header .Controls > div{
+    font-size: 12px;
+    font-weight: 100;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.Magnet-Editor-header .Controls > div:hover{
+    color: #111
+}
+.Magnet-Editor-body{
+    position: relative;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 90%;
+}
+.Editor{
+    width: 100%;
+    height: 100%;
+}
+/*
+    ***********************************************************************
+    ======              End Of Editor Panal                         =======
+    ***********************************************************************
+*/
+
+
+/* 
+    ****************************************************************************
+    =======        Start Of Magnet System Sliders                        =======
+    ****************************************************************************
+*/
+
+/*
+.Magnet-Slider{
+    width: 100%;
+    height: 100vh;
+    margin: 0px;
+    padding: 0px;
+    background-color: #ccc;
+    position: relative;
+    overflow: hidden;
+}
+.Magnet-Slider .Magnet-Slider-back{
+    width: 100%;
+    height: 100%;
+    padding: 5%;
+    background: url(../imgs/b.png) no-repeat center center;
+    background-size: cover;
+    background: linear-gradient(45deg , #343a40,#212529);
+}
+.Magnet-Slider .Magnet-Slider-back .back-shadow-img{
+    position: absolute;
+    top:0px;
+    right: 0px;
+    opacity: 0.05;
+    transform: rotateY(180deg);
+    
+}
+.Magnet-Slider .Magnet-Slider-back .back-shadow-img img{
+    display: none;
+}
+.Magnet-Slider .Magnet-Slider-back .back-shadow-img .show-Shadow{
+    display: block;
+}
+.Magnet-Slider .Magnet-Slider-back .Magnet-Slider-front{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: linear-gradient(to top,#212529,#343a40);
+    box-shadow: 0px 11px 50px rgba(0, 0, 0, 0.9), -10px 0px 50px rgba(0, 0, 0, 0.52)
+}
+.Magnet-Slider .Magnet-Slider-back .Magnet-Slider-front .Slides{
+    position: relative;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+}
+.Magnet-Slider .Magnet-Slider-back .Magnet-Slider-front .Slide{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+.Magnet-Slider .Magnet-Slider-back .Magnet-Slider-front .activeSlide{
+    display: block;
+}
+.Magnet-Slider .Magnet-Slider-back .Magnet-Slider-front .Slide .img{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    overflow: hidden;
+}
+.Magnet-Slider .Magnet-Slider-back .Magnet-Slider-front .Slide .img img{
+    width: 100%;
+    height: 100%;
+}
+.Magnet-Slider .Magnet-Slider-back .Magnet-Slider-front .slid-title{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    color: #fff;
+    font-family: 'Lobster', cursive;
+}
+.Magnet-Slider .Magnet-Slider-back .Magnet-Slider-front .main-title{
+    font-size: 50px;
+    text-transform: capitalize;
+    text-shadow: 0px 0px 50px #ccc;
+}
+.Magnet-Slider .Magnet-Slider-back .Magnet-Slider-front .slidesPoints{
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    color: #fff;
+}
+.Magnet-Slider .Magnet-Slider-back .Magnet-Slider-front .slidesPoints ul{
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+.Magnet-Slider .Magnet-Slider-back .Magnet-Slider-front .slidesPoints ul li{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+.Magnet-Slider .Magnet-Slider-back .Magnet-Slider-front .activePolit{
+    background-color: #fff;
+}
+
+*/
+
+/* [ 1 ] Swiper 3D Slider [ Personal Card Slider] */
+
+.Magnet-Personal-Card .swiper-container {
+  width: 100%;
+}
+.Magnet-Personal-Card .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 400px;
+    background-color: #fff
+}
+
+/* [ 2 ] 3Dx Cubic Slider */
+.Magnet-Cubic-Slider .swiper-container {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.Magnet-Cubic-Slider .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    background-color: rgba(0,0,0,0.5);
+    
+}
+
+/* Tow Dimintional Cube */
+
+.Magnet-Slider{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-container-cube .swiper-slide-active, 
+.swiper-container-cube .swiper-slide-active .swiper-slide-active{
+    z-index: 2;
+}
+
+.Magnet-Horizontal-Cubic-Slider > .swiper-container{
+    width: 80%;
+    height: 80vh;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.Magnet-Horizontal-Cubic-Slider > .swiper-container > .swiper-wrapper > .swiper-slide{
+    background-position: center;
+    background-size: cover;
+    background-color: rgba(255,255,255,0.5);
+}
+
+.Magnet-Vertical-Cubic-Slider .swiper-container{
+    width: 80%;
+    height: 80%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.Magnet-Vertical-Cubic-Slider .swiper-slide{
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-color: rgba(0,0,0,0.5);
+}
+
+
+
+/* 
+    ****************************************************************************
+    =======        End Of Magnet System Sliders                        =======
+    ****************************************************************************
+*/
+
+/* 
+    ****************************************************************************
+    =======        Start Of Magnet System Sections                        =======
+    ****************************************************************************
+*/
+
+.Magnet-Section{
+    width: 100%;
+    height: 100vh;
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+    overflow: hidden;
+}
+.section-pop-card .Magnet-section-back{
+    width: 100%;
+    height: 100%;
+    padding: 5%;
+    background: linear-gradient(45deg , #343a40,#212529);
+}
+.section-pop-card .Magnet-section-back .back-shadow-img{
+    position: absolute;
+    top:0px;
+    right: 0px;
+    opacity: 0.05;
+    transform: rotateY(180deg);
+}
+.section-pop-card .Magnet-section-back .back-shadow-img .disable-Shadow{
+    display: none;
+}
+.section-pop-card .Magnet-section-back .Magnet-section-front{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: linear-gradient(to top,#212529,#343a40);
+    box-shadow: 0px 11px 50px rgba(0, 0, 0, 0.9), -10px 0px 50px rgba(0, 0, 0, 0.52)
+}
+.section-pop-card .Magnet-section-back .Magnet-section-front .Section-Btn{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+/* Info Card */
+.Info-Card{
+    padding: 5%;
+    height: 100%;
+    background-color: #111;
+    position: relative;
+    overflow: hidden;
+}
+.Info-Card::before,
+.Info-Card::after{
+    content: '';
+    width: 100%;
+    height: 10px;
+    z-index: 1;
+    position: absolute;
+    left: 0px;
+    background-color: #fd0054
+}
+.Info-Card::before{
+    top: 0px;
+}
+.Info-Card::after{
+    bottom: 0px;
+}
+.Info-Card-Container{
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+}
+
+/* Book Card */
+.Card-book{
+    position: relative;
+    top: 10%;
+    left: 35%;
+    width: 300px;
+    height: 400px;
+    background:#fff;
+    transform-style: preserve-3d;
+    transform: perspective(2000px);
+    transition: 1s;
+    box-shadow: inset 30px 0px 50px rgba(0,0,0,0.5);
+}
+.Card-book:hover{
+    z-index: 1000;
+    transform: perspective(2000px);
+    box-shadow: inset 30px 0px 50px rgba(0,0,0,0.5);
+}
+.Card-book .Card-book-image{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #000;
+    transform-origin: left;
+    z-index: 1;
+    transition: 1s;
+}
+.Card-book:hover .Card-book-image{
+    transform: rotateY(-135deg);
+}
+.Card-book .Card-book-image img{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.Card-book .Card-book-detailes{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    padding: 20px;
+    text-align: center;
+}
+
+
+/* 
+    =============== Speatial Sections  ==============
+*/
+/* Magnet-Sections-Container */
+.Magnet-Container{
+    width: 90%;
+    margin: 0px auto;
+}
+/* Main Spesial Section Style */
+.Magnet-Sp-Sec{
+    width: 100%;
+    position: relative;
+    
+}
+/* Section Background As Shadow */
+.Magnet-Sp-Sec{
+    background: url("../../../assets/imgs/SectionsAssests/bg-2.png") no-repeat center center / 100% 100%;
+}
+/* Section Bottom Clouds*/
+.Magnet-Sp-Sec .Magnet-Bottom-Clouds{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: 1;
+}
+.Magnet-Sp-Sec .Magnet-Header{
+    width: 100%;
+    height:100px;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+    padding: 10px 20px;
+}
+.Magnet-Sp-Sec .Magnet-Header .Magnet-Header-Title{
+    font-family: 'Monoton', cursive;
+    color: #fff;
+    font-size: 48px;
+}
+.Magnet-Sp-Sec .Magnet-Header .Magnet-Header-Title span{
+    display: block;
+    margin-top: 10px;
+    text-shadow: 1px 1px 4px #212529;
+}
+.Magnet-Sp-Sec .Magnet-Header .Magnet-Header-Contacts{
+   transform: scale(0.7); 
+}
+.Magnet-Sp-Sec .Magnet-Header .Magnet-Header-Contacts ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 10px 10px;
+    position: relative;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.1);
+}
+.Magnet-Sp-Sec .Magnet-Header .Magnet-Header-Contacts ul li:nth-child(1)::before{
+    content: "";
+    position: absolute;
+    right: 0px;
+    top: 25px;
+    width: 2px;
+    background-color: #e9ecef66;
+    box-shadow: 1px 0px 2px rgba(104, 104, 104, 0.5);
+    height: 40px;
+}
+.Magnet-Sp-Sec .Magnet-Header .Magnet-Header-Contacts ul li div{
+    display: inline-block;
+    color: #fff;
+}
+.Magnet-Sp-Sec .Magnet-Header .Magnet-Header-Contacts ul li div.Magnet-Contacts-Logo{
+    font-size: 25px;
+    height: 50px;
+    text-align: center;
+    padding: 0px 10px;
+    text-shadow: 1px 1px 1px rgba(0,0,0,.2);
+}
+.Magnet-Sp-Sec .Magnet-Header .Magnet-Header-Contacts ul li div.Magnet-Contacts-Content{
+    margin-left: 5px;
+}
+.Magnet-Sp-Sec .Magnet-Header .Magnet-Header-Contacts ul li div.Magnet-Contacts-Content span{
+    display: block;
+}
+.Magnet-Sp-Sec .Magnet-Header .Magnet-Header-Contacts ul li div.Magnet-Contacts-Content span:nth-child(1){
+    color: rgba(255,255,255,0.5);
+}
+/* Magnet Sp Nav */
+.Magnet-Sp-Sec .Magnet-Sp-Nav{
+    position: relative;
+    z-index: 3;
+    width: 100%;
+    box-shadow: 0 0 10px rgba(0,0,0,.1);
+}
+.Magnet-Sp-Sec .Magnet-Sp-Nav nav{
+    width: 100%;
+    position: relative;
+}
+.Magnet-Sp-Sec .Magnet-Sp-Nav nav li{
+    list-style: none;
+    display: inline-block;
+}
+.Magnet-Sp-Sec .Magnet-linkes{
+    width: 100%;
+}
+.Magnet-Sp-Sec .Magnet-linkes > ul{
+    margin: 0px;
+    padding:0px;
+}
+.Magnet-Sp-Sec .Magnet-linkes > ul > li{
+    margin: 0px;
+    padding: 15px 10px 20px;
+    color: #eee;
+    cursor: pointer;
+    font-size: 18px;
+    text-shadow: 1px 1px 1px rgb(0, 0, 0,0.3);
+    position: relative;
+}
+.Magnet-Sp-Sec .Magnet-linkes > ul > li::after{
+    content: "";
+    position: absolute;
+    bottom:-2px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0%;
+    height: 2.5px;
+    background-color: #fff;
+    transition: 0.25s;
+    border-radius: 10px;
+    z-index: -1;
+}
+.Magnet-Sp-Sec .Magnet-linkes > ul >  li:hover::after{
+    width: 100%;
+}
+/* Sub Menu List */
+.Magnet-Sp-Sec .Magnet-Sub-Menu{
+    position: relative;
+}
+.Magnet-Sp-Sec .Magnet-Sub-Menu .Sub-menu-super{
+    display: none;
+    padding: 0px;
+    margin: 0px;
+    width: 250px;
+    position: absolute;
+    top: 100%;
+    left: 0px;
+    background-color: #fff;
+    border-radius: 0px 0px 5px 5px;
+    text-transform: capitalize;
+    font-family: 'Poppins', sans-serif;
+    box-shadow: 0px 1px 1px rgba(0,0,0,0.5), 0px 2px 2px rgba(0,0,0,0.5);
+}
+.Magnet-Sp-Sec .Magnet-Sub-Menu .Sub-menu-super li{
+    margin: 0px;
+    display: block;
+    color: #111;
+    padding: 5px 10px;
+    text-shadow: none;
+    border-width: 0px;
+    transition: 0.5s;
+    position: relative;
+}
+.Magnet-Sp-Sec .Magnet-Sub-Menu .Sub-menu-super li:hover{
+    color: #fff;
+    padding-left: 20px;
+    background-color: #111;
+}
+.Magnet-Sp-Sec .Super-Menu-Down-Arrow{
+    position: absolute;
+    right: 5%;
+    
+}
+.Magnet-Sp-Sec .Magnet-Sub-Menu .Sub-menu-super li:last-child{
+    border-radius: 0px 0px 5px 5px
+}
+.Magnet-Sp-Sec .Magnet-Sub-Menu .Sub-menu-super li .Sub-Menu-Sub{
+    display: none;
+    position: absolute;
+    top: 0px;
+    left: 100%;
+    background-color: #fff;
+    color: #000;
+    z-index: 2;
+    width: 250px;
+    border-radius: 0px 5px 5px 5px;
+    border-top: 2px solid #111;
+    box-shadow: 0px 1px 1px rgba(0,0,0,0.5), 0px 2px 2px rgba(0,0,0,0.5);
+}
+.Magnet-Sp-Sec .Magnet-Sub-Menu .Sub-menu-super li .Sub-Menu-Sub li:first-child{
+    border-radius: 0px 5px 0px 0px;
+}
+/* Navigation Btn */
+.Magnet-Sp-Sec .Magnet-Nav-btn{
+    display: none;
+    width: 25px;
+    margin: 15px;
+    cursor: pointer;
+}
+.Magnet-Sp-Sec .Magnet-Nav-btn span{
+    display: block;
+    width: 100%;
+    height: 5px;
+    border-radius: 10px;
+    margin-bottom: 3px;
+    background-color: #fff;
+}
+.Magnet-Sp-Sec .Magnet-Right-Search-Container{
+    display: flex;
+}
+.Magnet-Sp-Sec .Magnet-Right-Search-Container .Magnet-Search-Box{
+    display: flex;
+}
+.Magnet-Sp-Sec .Magnet-Search-Input{
+    display: none;
+    width: 80%;
+    height: 100%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+.Magnet-Sp-Sec .Magnet-Search-Input .SearchBox{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    color: #fff;
+    padding-left: 150px;
+    font-size: 36px;
+    border: none;
+    text-shadow: 1px 1px 1px rgb(0,0,0,0.1);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    outline: 0px !important;
+    z-index: -2;
+    
+}
+.Magnet-Sp-Sec .active-Search-Box{
+    z-index: 1 !important;
+}
+.Magnet-Sp-Sec .Magnet-Search-Input .SearchBox::placeholder{
+    color: #eee;
+    text-transform: uppercase;
+}
+.Magnet-Sp-Sec .Magnet-Search-Icon{
+    position: absolute;
+    top: 50%;
+    right: 20%;
+    font-size: 30px;
+    transform: translateY(-50%);
+    padding: 5px 10px;
+    cursor: pointer;
+    color: #fff;
+    z-index: 2;
+    transition: 0.5s;
+    
+}
+/* Nav Btn */
+.Magnet-Sp-Sec .Magnet-sp-section-nav-btn{
+    position: absolute;
+    top: 0px;
+    right: 5%;
+    height: 100%;
+    text-align: right;
+    z-index: 10;
+}
+
+.Magnet-Sp-Sec .Magnet-sp-section-nav-btn .curtain-1{
+	 color: #111
+}
+.Magnet-Sp-Sec .Magnet-sp-section-nav-btn .curtain-1:hover{
+	 color: #fff
+}
+.Magnet-Sp-Sec .Magnet-sp-section-nav-btn .curtain-1{
+	 font-size: 18px
+}
+.Magnet-Sp-Sec .Magnet-sp-section-nav-btn .curtain-1{
+	 border-width: 1px
+}
+.Magnet-Sp-Sec .Magnet-sp-section-nav-btn .curtain-1{
+	 border-style: solid
+}
+.Magnet-Sp-Sec .Magnet-sp-section-nav-btn .curtain-1{
+	 border-color: #111
+}
+.Magnet-Sp-Sec .Magnet-sp-section-nav-btn .curtain-1:hover{
+	 border-color: #111
+}
+.Magnet-Sp-Sec .Magnet-sp-section-nav-btn .curtain-1{
+	 border-radius: 15px 0px
+}
+.Magnet-Sp-Sec .Magnet-sp-section-nav-btn .curtain-1::before{
+	 background-color: #111
+}
+/* Sections Frame Work Color */
+.Magnet-Sp-Sec.Magnet-Sp-Sec-bg-color,
+.Magnet-Sp-Sec .Magnet-Sp-Sec-bg-color{
+    background-color: #dc3545 !important;
+}
+/* Btn Of Quote */
+
+/* Center Text */
+.Magnet-Sp-Sec .Magnet-Center-text{
+    width: 100%;
+    padding: 50px 15px 0px 15px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif
+}
+.Magnet-Sp-Sec .Magnet-Center-text p{
+    font-size: 2rem;
+    font-weight: 600;
+    text-shadow: 0px 3px 3px rgba(0,0,0,0.3);
+    color: #fff;
+    margin-bottom: 0.5rem;
+}
+.Magnet-Sp-Sec .Magnet-Center-text span{
+    font-size: 14px;
+    color: rgba(255,255,255,0.5);
+    text-shadow: 0px 1px 1px rgba(0,0,0,0.3);
+}
+/* Quote Center */
+.Magnet-Sp-Sec .Magnet-Quote-Center{
+    position: relative;
+    bottom: -50px;
+}
+.Magnet-Sp-Sec .Quota-forms{
+    position: relative;
+    z-index: 2;
+    transform: scale(0.9);
+}
+.Magnet-Sp-Sec .Magnet-Quote-tabs{
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+}
+.Magnet-Sp-Sec .Magnet-Quote-tabs li{
+    display: inline-block;
+    padding:0px;
+    margin: 0px;
+    padding: 20px 10px;
+    background-color: #F44336;
+    border: 1px solid #D32F2F;
+    color: #fff;
+    border-radius: 0.25rem 0.25rem 0px 0px;
+    flex-basis: 0;
+    flex-grow: 1;
+    text-align: center;
+    cursor: pointer;
+    text-transform: capitalize;
+    font-size: 1rem;
+    font-weight: 600;
+}
+.Magnet-Sp-Sec .Magnet-Quote-tabs li:hover{
+    background-color: #dc3545;
+}
+.Magnet-Sp-Sec .active-tab{
+    background-color: #fff !important;
+    border: 1px solid #fff !important;
+    color: #111 !important;
+}
+.Magnet-Sp-Sec .QuotaFORM{
+    display: none;
+}
+.Magnet-Sp-Sec .active-quote{
+    display: block;
+}
+.Magnet-Sp-Sec .Magnet-Quote-forms{
+    width: 100%;
+    padding: 2rem 3rem;
+    background-color: #fff;
+    box-shadow: 0px 3px 5px rgba(0,0,0,0.2);
+    border-radius: 0px 0px 0.25rem 0.25rem;
+    font-family: 'Poppins', sans-serif; 
+}
+.Magnet-Sp-Sec .Magnet-input-logo{
+    background-color: #fff;
+    border-right-width: 0;
+}
+.Magnet-Sp-Sec .Magnet-input{
+    outline: 0 !important;
+}
+.Magnet-Sp-Sec .Magnet-input:focus{
+    box-shadow: none;
+    border-color: #999;
+}
+/* Quote Form Btn */
+.Magnet-Sp-Sec .Magnet-Quota-submit-btn{
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+.Magnet-Sp-Sec .Magnet-Quota-submit-btn .curtain-1{
+	 color: #111
+}
+.Magnet-Sp-Sec .Magnet-Quota-submit-btn .curtain-1:hover{
+	 color: #fff
+}
+.Magnet-Sp-Sec .Magnet-Quota-submit-btn .curtain-1{
+	 font-size: 25px
+}
+.Magnet-Sp-Sec .Magnet-Quota-submit-btn .curtain-1{
+	 border-width: 1px
+}
+.Magnet-Sp-Sec .Magnet-Quota-submit-btn .curtain-1{
+	 border-style: solid
+}
+.Magnet-Sp-Sec .Magnet-Quota-submit-btn .curtain-1{
+	 border-color: #111
+}
+.Magnet-Sp-Sec .Magnet-Quota-submit-btn .curtain-1:hover{
+	 border-color: #111
+}
+.Magnet-Sp-Sec .Magnet-Quota-submit-btn .curtain-1{
+	 border-radius: 20px 0px
+}
+.Magnet-Sp-Sec .Magnet-Quota-submit-btn .curtain-1::before{
+	 background-color: #111
+}
+
+/* Quote Image */
+.Magnet-Sp-Sec .Quote-image{
+    position: relative;
+    z-index: 2;
+}
+.Magnet-Sp-Sec .Quote-img{
+    width: 100%;
+    transform: scale(0.9);
+    
+}
+/* Media */
+@media(max-width:1300px){
+    .Magnet-Sp-Sec .Magnet-Title{
+        max-width: 100%;
+        flex: 0 0 100%;
+        text-align: center;
+    }
+    .Magnet-Sp-Sec .Magnet-Contacts{
+        display: none;
+    }  
+}
+@media(max-width:992px){
+    .Magnet-Sp-Sec .Magnet-Nav-btn{
+        display: block;
+    }
+    .Magnet-Sp-Sec .Magnet-linkes{
+        width: 100%;
+        height: 100%;
+        position: relative;
+    }
+    .Magnet-Sp-Sec .Magnet-linkes ul{
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        background-color: #222;
+        
+    }
+    .Magnet-Sp-Sec .Magnet-linkes ul li{
+        display: block;
+        border-bottom: 1px solid #ccc;
+        padding-left: 35px;
+        z-index: 1;
+    }
+    .Magnet-Sp-Sec .Magnet-linkes > ul > li::after{
+        content: "";
+        position: absolute;
+        top: 0px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 0%;
+        height: 100%;
+        background-color: #dc3545;
+        transition: 0.25s;
+        border-radius: 0px;
+        z-index: -1;
+    }
+    .Magnet-Sp-Sec .Magnet-linkes > ul > li.Magnet-Sub-Menu::after,
+    .Magnet-Sp-Sec .Magnet-Sp-Nav .Magnet-linkes .Magnet-Sub-Menu .Sub-menu-super li.Sub-Menu-Sub::after{
+        background-color: #222;
+    }
+    .Magnet-Sp-Sec .Magnet-linkes ul li:last-child{
+        border-bottom: 0px solid #000;
+    }
+    .Magnet-Sp-Sec .Magnet-Sp-Nav .Magnet-linkes .Magnet-Sub-Menu .Magnet-nav-dropArrow{
+        position: absolute;
+        right: 5%;
+    }
+    .Magnet-Sp-Sec .Magnet-Sp-Nav .Magnet-linkes .Magnet-Sub-Menu .Sub-menu-super,
+    .Magnet-Sp-Sec .Magnet-Sp-Nav .Magnet-linkes .Magnet-Sub-Menu .Sub-menu-super li.Sub-Menu-Sub{
+        
+        position: inherit;
+        width: 100%;
+        background-color: #222;
+        box-shadow: none;
+    }
+    .Magnet-Sp-Sec .Magnet-Sp-Nav .Magnet-linkes .Magnet-Sub-Menu .Sub-menu-super li.Sub-Menu-Sub{
+        left: 0px;
+    }
+    .Magnet-Sp-Sec .Magnet-Sp-Nav .Magnet-linkes .Magnet-Sub-Menu .Sub-menu-super li{
+        color: #fff;
+        border-radius: 20px;
+    }
+    .Magnet-Sp-Sec .Magnet-Sp-Nav .Magnet-linkes .Magnet-Sub-Menu .Sub-menu-super li:hover{
+        background-color: #dc3545;
+    }
+    .Magnet-Sp-Sec .Magnet-Sp-Nav .Magnet-linkes .Magnet-Sub-Menu .Sub-menu-super li.Sub-Menu-Sub:hover{
+        background-color: #222;
+    }
+    /* Nav Btn */
+    .Magnet-Sp-Sec .Quote-btn{
+        padding: 0px;
+    }
+    .Magnet-Sp-Sec .Quote-btn div:nth-child(1){
+         width : 100px
+    }
+    .Magnet-Sp-Sec .Quote-btn div:nth-child(1){
+         height : 35px
+    }
+    .Magnet-Sp-Sec .Quote-btn div:nth-child(1) div{
+         line-height: 35px
+    }
+    .Magnet-Sp-Sec .Quote-btn div:nth-child(2){
+         width :  35px
+    }
+    .Magnet-Sp-Sec .Quote-btn div:nth-child(2){
+         height : 35px
+    }
+    .Magnet-Sp-Sec .Quote-btn div:nth-child(2) div{
+         line-height : 35px
+    }
+    .Magnet-Sp-Sec .Quote-btn {
+         font-size : 12px
+    }
+    .Magnet-Sp-Sec .Quote-btn div:nth-child(1) span{
+         color : #fff;
+    }
+    .Magnet-Sp-Sec .Quote-btn:hover div:nth-child(1) span{
+         color : #111;;
+    }
+    .Magnet-Sp-Sec .Quote-btn div:nth-child(2) span{
+         color : #111;
+    }
+    .Magnet-Sp-Sec .Quote-btn:hover div:nth-child(2) span{
+         color : #fff;
+    }
+    .Magnet-Sp-Sec .Quote-btn div:nth-child(1) div{
+         border-width : 0;
+    }
+    .Magnet-Sp-Sec .Quote-btn div:nth-child(2) div{
+         border-width : 0;
+    }
+    .Magnet-Sp-Sec .Quote-btn div:nth-child(1) div{
+         border-radius : 0px 15px;
+    }
+    .Magnet-Sp-Sec .Quote-btn div:nth-child(2) div{
+         border-radius : 15px 0px;
+    }
+    .Magnet-Sp-Sec .Quote-btn div:nth-child(2) div::before{
+         border-radius : 15px 0px;
+    }
+    .Magnet-Sp-Sec .Quote-btn .Sell-title::before{
+         background-color : #111;
+    }
+    .Magnet-Sp-Sec .Quote-btn .Sell-title{
+         background-color :#fff;
+    }
+    .Magnet-Sp-Sec .Quote-btn .Sell-icon::before{
+         background-color : #fff;
+    }
+    .Magnet-Sp-Sec .Quote-btn .Sell-icon{
+         background-color : #111;
+    }
+    /* Quote Form */
+    .Magnet-Sp-Sec .Quota-forms{
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
+    .Magnet-Sp-Sec .Quote-image{
+        display: none;
+    }
+}
+@media(max-width:700px){
+    .Magnet-Sp-Sec .Quote-btn,
+    .Magnet-Sp-Sec .Magnet-linkes ul,
+    .Magnet-Sp-Sec .Magnet-Sub-Menu .Sub-menu-super{
+        display: none;
+    }
+    .Magnet-Sp-Sec .Magnet-Search-Input,
+    .Magnet-Sp-Sec .Magnet-Search-Input .SearchBox{
+        width: 95%;
+        font-size: 25px;
+    }
+    .Magnet-Sp-Sec .Magnet-Search-Input .SearchBox{
+        font-size: 1em;
+    }
+    .Magnet-Sp-Sec .Magnet-Search-Icon{
+        right: 2%;
+    }
+}
+@media(max-width:500px){
+    .Magnet-Sp-Sec .Magnet-Quote-Center .Quota-forms .Magnet-Quote-tabs{
+        display: block;
+    }
+    .Magnet-Sp-Sec .Magnet-Quote-Center .Quota-forms .Magnet-Quote-tabs li{
+        display: block;
+    }
+}
+
+
+/*
+    ======================= Multi Purpose =================== 
+*/
+
+/* All Sections  */
+.Magnet-section-1{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color:#111;
+    overflow: hidden;
+}
+.Magnet-section-1::before,
+.Magnet-section-1::after{
+    content: "";
+    position: absolute;
+    left: 0px;
+    width: 100%;
+    height: 10px;
+    background-color: #f05d41;
+    z-index: 2;
+}
+.Magnet-section-1::before{
+    top: 0px;
+}
+.Magnet-section-1::after{
+    bottom:0px;
+}
+/* [ 1 ] */
+.Magnet-section-1.sec-1-center-p p{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color:#fff;
+    font-weight: 700;
+    font-size: 1.5em;
+    text-align: center;
+    text-shadow: 0px 2px 2px rgba(255,255,255,0.5); 
+}
+/* [ 2 ] */
+.Magnet-section-1.sec-1-center-p-span .content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.Magnet-section-1.sec-1-center-p-span .content p{
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.5em;
+    text-shadow: 0px 2px 2px rgba(255,255,255,0.5); 
+}
+.Magnet-section-1.sec-1-center-p-span .content span{
+    color: #888;
+    font-weight: 500;
+    font-size: 1em;
+    
+}
+/* [ 3 ] */
+.sec-1-center-p-line p{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #fff;
+    font-size: 2em;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+}
+.sec-1-center-p-line p::before{
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0px;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 2.5px;
+    background-color: #fff;
+    border-radius: 20px;
+}
+/* [ 4 ] */
+.sec-1-center-p-span-line .content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    padding-bottom: 20px;
+}
+.sec-1-center-p-span-line .content::before{
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0px;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 2.5px;
+    background-color: #fff;
+    border-radius: 20px;
+}
+.sec-1-center-p-span-line .content p{
+    color: #fff;
+    font-size: 2em;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.sec-1-center-p-span-line .content span{
+    color: #888;
+    font-size: 22px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+/* [ 6 ]  */
+.Magnet-content-rows{
+    padding: 50px;
+    height: auto;
+    font-family: 'Raleway', sans-serif;
+}
+.Magnet-content-rows .Magnet-Section-row{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.Magnet-content-rows .Magnet-row-head{
+    width: 100%;
+    text-align:center;
+    color: #fff;
+    position: relative;
+    margin-bottom: 100px;
+}
+.Magnet-content-rows .Magnet-row-head::after{
+    content: "";
+    position: absolute;
+    bottom: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 10%;
+    height: 3px;
+    background-color: #fff;
+}
+.Magnet-content-rows .Magnet-row-head h3{
+    margin-top: 50px;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    font-size: 3em;
+    font-weight: 700;
+}
+.Magnet-content-rows .Magnet-row-head p{
+    display: inline-block;
+    text-transform: capitalize;
+    font-size: 20px;
+    color: #999;
+    max-width: 700px;
+}
+.Magnet-content-rows .Magnet-fetures{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+}
+.Magnet-content-rows .Magnet-fetures .future-icon-tag{
+    flex: 0 0 25%;
+}
+.Magnet-content-rows .Magnet-fetures .future-icon-tag span{
+    font-size: 2em;
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    background-color: #ff1025;
+    color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 70px;
+}
+.Magnet-content-rows .Magnet-fetures .future-text-body{
+    flex: 0 0 75%;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.Magnet-content-rows .Magnet-fetures .future-text-body h3{
+    font-size: 1.3em;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-align: left;
+    color: #f9f9f9;
+}
+.Magnet-content-rows .Magnet-fetures .future-text-body p{
+    text-align: left;
+    font-size: 0.8em;
+    font-weight: 400;
+    color: #999;
+}
+.Magnet-content-rows .Magnet-future-image{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+.Magnet-content-rows .Magnet-future-image img{
+    object-fit: cover;
+}
+/* [ 7 ] */
+.Magnet-content-rows-features{
+    padding: 80px 0px;
+    height: auto;
+    font-family: 'Raleway', sans-serif;
+}
+.Magnet-content-rows-features .Magnet-row-features-header{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 1.5em;
+}
+.Magnet-content-rows-features .Magnet-row-features-header .fet-icon{
+    color: #fff;
+    background-color: #ef6044;
+    padding: 10px;
+    border-radius: 50%;
+    text-align: center;
+    display: inline-block;
+    line-height: 10px;
+    font-size: 25px;
+}
+.Magnet-content-rows-features .Magnet-row-features-header .fet-title{
+    color: #fff;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+.Magnet-content-rows-features p{
+    color: #fff4;
+}
+
+/* [ 8 ] */
+.Magnet-content-rows-Demo{
+    padding:50px 0px;
+    height: auto;
+}
+.Magnet-content-rows-Demo .Magnet-Demo-Head{
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+}
+.Magnet-content-rows-Demo .Magnet-Demo-Head h3{
+    color: #fff;
+    font-size: 44px;
+    font-weight: 700;
+    letter-spacing: -1px;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 50px;
+    margin-bottom: 25px;
+}
+.Magnet-content-rows-Demo .Magnet-Demo-Head h3 span{
+    color: #ff1025
+}
+.Magnet-content-rows-Demo .Magnet-Demo-Head p{
+    display: inline-block;
+    max-width: 700px;
+    color: #fff5;
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 25px;
+    margin-bottom: 50px;
+}
+.Magnet-Demo-part{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.Magnet-Demo-part .Demo-image,
+.Magnet-Demo-part .Demo-info{
+    flex: 0 0 50%;
+    overflow: hidden;
+}
+.Magnet-Demo-part .Demo-image{
+    box-shadow: 0 1rem 3rem rgba(9,9,9,.175)!important;
+    border-radius: 5px;
+}
+.Magnet-Demo-part .Demo-image img{
+    width: 100%;
+}
+.Magnet-Demo-part .Demo-info{
+    color: #fff;
+    position: relative;
+}
+.Magnet-Demo-part .Demo-info .Demo-info-content{
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+}
+.Magnet-Demo-part .Demo-info .Demo-info-content .Demo-info-title,
+.Magnet-Demo-part .Demo-info .Demo-info-content .Demo-info-disc,
+.Magnet-Demo-part .Demo-info .Demo-info-content .Demo-info-link{
+    margin-bottom: 10px;
+    text-transform: capitalize;
+    font-family: 'Poppins', sans-serif;
+}
+.Magnet-Demo-part .Demo-info .Demo-info-content .Demo-info-title span{
+    font-size: 22px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.Magnet-Demo-part .Demo-info .Demo-info-content .Demo-info-disc span{
+    font-size: 14px;
+    color: #888;
+    font-weight: 400;
+}
+.Magnet-Demo-part .Demo-info .Demo-info-content .Demo-info-link a{
+    text-transform: capitalize;
+    text-decoration: none;
+    display: inline-block;
+    background-color: #ff1144;
+    padding: 5px 10px;
+    border-radius: 20px;
+    color: #fff;
+    text-align: center;
+    margin-top: 10px;
+}
+.Magnet-Demo-part .Demo-info .Demo-info-content .Demo-info-link a:hover{
+    background-color: #ff2255;
+}
+@media(max-width:992px){
+    
+    .Magnet-Demo-part{
+        flex-direction: column;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    
+    .Magnet-Demo-part .Demo-image,
+    .Magnet-Demo-part .Demo-info{
+        flex: 0 0 100%;
+    }
+    
+    .Magnet-Demo-part .Demo-info .Demo-info-content{
+        position: unset;
+        transform: translateY(0%);
+        margin-top: 20px;
+    }
+    
+}
+/* [ 10 ]  */
+.Magnet-content-rows-counters{
+    padding: 50px 0px;
+    height: auto;
+}
+.Magnet-content-rows-counters .counters{
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+.Magnet-content-rows-counters .counters .counter-icon{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.Magnet-content-rows-counters .counters .counter-icon span{
+    font-size: 3em;
+    font-weight: 700;
+    color: #fff;
+}
+.Magnet-content-rows-counters .counter-number span{
+    color: #ff1155;
+    font-size: 2.5em;
+    font-weight: 700;
+    
+}
+.Magnet-content-rows-counters .counter-title{
+    color: #999;
+    font-size: 16px;
+    font-weight: 600;
+}
+/* [ 11 ] */
+.Magnet-content-rows-Demo .Magnet-Demo-Display-Title{
+    display: block;
+    width: 100%;
+    padding:50px 0px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+.Magnet-content-rows-Demo .Magnet-Demo-Display-Title span{
+    display: inline-block;
+    padding:20px 0px;
+    font-size: 44px;
+    color: #fff;
+    font-weight: 700;
+}
+.Magnet-content-rows-Demo .Magnet-Demo-Display-Title span .Demo-name{
+    color: #ff3325;
+}
+.Magnet-content-rows-Demo .Demo-view-link{
+    display: block;
+    text-decoration: none;
+}
+.Magnet-content-rows-Demo .Demo-view-link .Demo-view{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding: 20px 20px 10px 20px;
+    position: relative;
+}
+.Magnet-content-rows-Demo .Demo-view-link .Demo-view .Demo-view-image{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    box-shadow: 0px 1rem 3rem rgba(0,0,0,0.175);
+}
+.Magnet-content-rows-Demo .Demo-view-link .Demo-view .Demo-view-image .Demo-view-ripon{
+    background-color: #fd0054;
+    position: absolute;
+    transform: rotate(45deg);
+    text-align: center;
+    top: 26px;
+    right: -35px;
+    width: 150px;
+    border: 1px solid #e9ecef;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+}
+.Magnet-content-rows-Demo .Demo-view-link .Demo-view .Demo-view-image img{
+    width: 100%;
+    height: auto;
+}
+.Magnet-content-rows-Demo .Demo-view-link .Demo-view .Demo-view-name{
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.Magnet-content-rows-Demo .Demo-view-link .Demo-view .Demo-view-name span{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+}
+.Magnet-content-rows-Demo .Demo-view-link .Demo-view .Demo-view-name span:hover{
+    color: #ff5562
+}
+/* [ 12 ] */
+.Magnet-content-rows-Components{
+    padding: 50px 0px;
+    height: auto;
+    position: relative;
+    font-family: 'Poppins', sans-serif; 
+}
+.Magnet-content-rows-Components .Magnet-content-rows-Components-header{
+    padding: 50px;
+    background-color: #ff4422;
+    text-align: center;
+}
+.Magnet-content-rows-Components .Magnet-content-rows-Components-header span{
+    font-size: 25px;
+    color: #fff;
+    font-weight: 500;
+    text-shadow: 0px 1px 1px #fff;
+}
+.Magnet-content-rows-Components-rows .row > div{
+    padding: 0px;
+    position: relative;
+}
+.Magnet-content-rows-Components-rows .Component{
+    position: relative;
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 50px;
+    background-color:#fff;
+    text-decoration: none!important;
+    transition: 0.5s;
+}
+.Magnet-content-rows-Components-rows .Component::before{
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 100%;
+    top: 0;
+    right: 0px;
+    border-right: 1px solid #EEE;
+}
+.Magnet-content-rows-Components-rows .Component::after{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 0;
+    bottom: 0;
+    right: 0px;
+    border-bottom: 1px solid #EEE;
+}
+.Magnet-content-rows-Components-rows .Component:hover{
+    transform: scale(1.1);
+    z-index: 2;
+    box-shadow: 0px 0px 13px 3px rgba(0,0,0,0.07);
+}
+.Magnet-content-rows-Components-rows .Component .Component-icon{
+    font-size: 35px
+}
+.Magnet-content-rows-Components-rows .Component .Component-icon,
+.Magnet-content-rows-Components-rows .Component .Component-title{
+    margin-bottom: 10px;
+    margin-top: 10px;
+    color:#ff4422;
+    font-weight: 600;
+    text-decoration: none;
+}
+/* [ 13 ] */
+.Magnet-content-row-testimonials{
+    height: auto;
+    padding: 50px 0px;
+}
+.Magnet-content-row-testimonials .testimonial-head{
+    padding: 25px 0px;
+    margin-bottom: 15px;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+}
+.Magnet-content-row-testimonials .testimonial-head span{
+    color: #fff;
+    font-size: 25px;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+.Magnet-content-row-testimonials .testimonials-tree{
+    overflow: hidden;
+    position: relative;
+}
+.Magnet-content-row-testimonials .testimonial-part-container{
+    display: flex;
+    position: relative;
+    padding-top: 10px;
+}
+.Magnet-content-row-testimonials .testimonial-part-container::before{
+    content: "";
+    position: absolute;
+    left: -1px;
+    top: 0px;
+    height: 100%;
+    width: 0px;
+    border-left: 1px dashed #eee;
+    
+}
+.Magnet-content-row-testimonials .testimonial-part-container::after{
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    left: 0px;
+    width: 100%;
+    height: 0px;
+    border-bottom: 1px dashed #eee;
+}
+.Magnet-content-row-testimonials .testimonial-part-container .testimonial-image{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.Magnet-content-row-testimonials .testimonial-part-container .testimonial-image img{
+    width: 100%;
+}
+.Magnet-content-row-testimonials .testimonial-info{
+    flex: 0 0 75%;
+    position: relative;
+    left: 15px;
+    top: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.Magnet-content-row-testimonials .testimonial-info .testimonial-info-text p{
+    color:rgba(255,255,255,0.7);
+    font-family: 'Crete Round', serif;
+    font-weight: 300;
+    font-style: italic;
+    text-align: left;
+    line-height: 1.8;
+}
+.Magnet-content-row-testimonials .testimonial-info .testimonial-info-text p::before,
+.Magnet-content-row-testimonials .testimonial-info .testimonial-info-text p::after{
+    content: '"';
+}
+.Magnet-content-row-testimonials .testimonial-info .testimonial-info-name span{
+    color: #fff;
+    font-size: 15px;
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+}
+.Magnet-content-row-testimonials .testimonial-info .testimonial-info-name span::before{
+    content: "\2013";
+}
+.Magnet-content-row-testimonials .testimonial-info .testimonial-info-social span{
+    color: #888;
+    font-size: 12px;
+    text-transform: capitalize;
+}
+.Magnet-content-row-testimonials .testimonial-info .testimonial-info-social span::after{
+    content: '.'
+}
+/* [ 14 ] */
+/* 
+    ****************************************************************************
+    =======        End Of Magnet System Sections                        =======
+    ****************************************************************************
+*/
+
+/* 
+    ****************************************************************************
+    =======            Start Of Magnet Forms                             =======
+    ****************************************************************************
+*/
+
+/* [ 0 ] Index */
+.Formly-Main-Header{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    background-color: #f9f9ff;
+}
+.Formly-Main-Header::before{
+    content: '';
+    width: 600px;
+    height: 600px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    background-color: #4455ff;
+    border-radius: 0 0 0 100%;
+}
+.Formly-Main-Header::after{
+    content: '';
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    background-color: #4455ff;
+    border-radius: 0 100% 0 0;
+}
+.Formly-Main-Header .Formly-Main-Header-side{
+    flex: 0 0 50%;
+    overflow: hidden;
+    position: relative;
+}
+.Formly-Main-Header .Formly-Main-Header-side img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.Formly-Main-Header .Formly-Main-Header-side .Fomly-Main-Header-Container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.Formly-Main-Header .Formly-Main-Header-side .Fomly-Main-Header-Container .Formly-Header{
+    width: 100%;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+}
+.Formly-Main-Header .Formly-Main-Header-side .Fomly-Main-Header-Container .Formly-Header div{
+    display: inline-block;
+}
+.Formly-Main-Header .Formly-Main-Header-side .Fomly-Main-Header-Container .Formly-Header .Formly-Header-logo .span-logo{
+    display: block;
+}
+.Formly-Main-Header .Formly-Main-Header-side .Fomly-Main-Header-Container .Formly-Header .Formly-Header-logo .span-logo span{
+    display: block;
+}
+.Formly-Main-Header .Formly-Main-Header-side .Fomly-Main-Header-Container .Formly-Header .Formly-Header-logo .span-logo span:nth-of-type(1){
+    width: 60px;
+    height: 25px;
+    background-color: #183e7e;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+.Formly-Main-Header .Formly-Main-Header-side .Fomly-Main-Header-Container .Formly-Header .Formly-Header-logo .span-logo span:nth-of-type(2){
+    width: 40px;
+    height: 20px;
+    background-color: #2196F3;
+    border-bottom-right-radius: 50px;
+    
+}
+.Formly-Main-Header .Formly-Main-Header-side .Fomly-Main-Header-Container .Formly-Header .Formly-Header-logo .span-logo span:nth-of-type(3){
+    width: 20px;
+    height: 10px;
+    background-color: #B3E5FC;
+    border-bottom-right-radius: 50px;
+}
+.Formly-Main-Header .Formly-Main-Header-side .Fomly-Main-Header-Container .Formly-Header .Formly-Header-logo .img-log{
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 5px solid #2196F3;
+}
+.Formly-Main-Header .Formly-Main-Header-side .Fomly-Main-Header-Container .Formly-Header .Formly-Header-logo .img-log img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.Formly-Main-Header .Formly-Main-Header-side .Fomly-Main-Header-Container .Formly-Header .Formly-Header-Title{
+    margin-top: 10px;
+    
+}
+.Formly-Main-Header .Formly-Main-Header-side .Fomly-Main-Header-Container .Formly-Header .Formly-Header-Title h3{
+    font-size: 35px;
+    color: #2196F3;
+    font-weight: 700;
+}
+.Formly-Main-Header .Formly-Main-Header-side .Fomly-Main-Header-Container .Header-Sub-Title{
+    display: block;
+    margin-top: 25px;
+    text-align: center;
+    width: 100%;
+}
+.Formly-Main-Header .Formly-Main-Header-side .Fomly-Main-Header-Container .Header-Sub-Title p{
+    color: #111;
+    font-size: 20px;
+    letter-spacing: 1px;
+    
+}
+.Formly-Main-Body{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-color: #f9f9ff;
+    text-align: center;
+}
+.Formly-Main-Body::before{
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 300px;
+    height: 300px;
+    background-color: #4455ff;
+    border-radius: 0 0 100% 0;
+}
+.Formly-Main-Body .Formly-Main-Body-Header{
+    padding-top: 50px;
+}
+.Formly-Main-Body .Formly-Main-Body-Header h3{
+    font-size: 48px;
+}
+.Formly-Main-Body .Formly-Main-Body-Header p{
+    font-size: 18px;
+    color: #1117
+}
+.Formly-Product-Preview-container{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 50px;
+}
+.Formly-Product-Preview-container .Formly-Product-Preview{
+    width: 100%;
+    height: auto;
+    position: relative;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: 0.5s;
+    margin-bottom: 15px;
+    box-shadow: 0px 2px 5px #ccc;
+}
+.Formly-Product-Preview-container .Formly-Product-Preview .Formly-Product-Preview-img{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.Formly-Product-Preview-container .Formly-Product-Preview .Formly-Product-Preview-img img{
+    width: 100%;
+}
+.Formly-Product-Preview-container .Formly-Product-Preview .Formly-Product-Preview-details{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: #1118;
+    transition: 0.5s;
+    cursor: pointer;
+    transform: scale(0);
+}
+.Formly-Product-Preview-container .Formly-Product-Preview:hover .Formly-Product-Preview-details{
+    transform: scale(1);
+    transition: 0.5s;
+}
+.Formly-Product-Preview-details-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.Formly-Product-Preview-details-content .product-title{
+    margin-bottom: 10px;
+}
+.Formly-Product-Preview-details-content .product-title span{
+    color: #fff;
+    font-size: 25px;
+    text-shadow: 0px 1px 1px #ccc;
+}
+.Formly-Product-Preview-details-content .product-link{
+    margin-top: 10px;
+}
+.Formly-Product-Preview-details-content .product-link a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    border-bottom: 1px solid #fff5;
+}
+.Formly-Product-Preview-details-content .product-link a span{
+    margin-left: 10px;
+}
+@media(max-width:1024px){
+    .Formly-Main-Header::before{
+        width: 150px;
+        height: 150px;
+    }
+    .Formly-Main-Header::after{
+        width: 75px;
+        height: 75px;
+    }
+    .Formly-Main-Header .Formly-Main-Header-image-side{
+        display: none;
+    }
+    .Formly-Main-Body::before{
+        width: 75px;
+        height: 75px;
+    }
+}
+/* Start Of Formly Style [ Main Container ] */
+.Formly{
+    width: 100%;
+    min-height: 100vh;
+    height: 100vh;
+    position: relative;
+}
+/* End Of Formly Style  [ Main Container ] */
+/* [ 1 ] Formly Basic */
+.Formly-Basic{
+    background-color: #FFFCE7 !important;
+    background: url('../imgs/bg-01.svg') no-repeat fixed;
+    background-size: cover;
+}
+.Formly-Basic-Form-Container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 25px 25px;
+    background-color: #fff;
+    box-shadow: 0px 3px 6px rgba(0,0,0,0.2);
+    width: 500px;
+}
+.Formly-Basic-Form-Container .Formly-Header{
+    width: 100%;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+}
+.Formly-Basic-Form-Container .Formly-Header div{
+    display: inline-block;
+}
+.Formly-Basic-Form-Container .Formly-Header .Formly-Header-logo .span-logo{
+    display: block;
+}
+.Formly-Basic-Form-Container .Formly-Header .Formly-Header-logo .span-logo span{
+    display: block;
+}
+.Formly-Basic-Form-Container .Formly-Header .Formly-Header-logo .span-logo span:nth-of-type(1){
+    width: 60px;
+    height: 25px;
+    background-color: #183e7e;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+.Formly-Basic-Form-Container .Formly-Header .Formly-Header-logo .span-logo span:nth-of-type(2){
+    width: 40px;
+    height: 20px;
+    background-color: #2196F3;
+    border-bottom-right-radius: 50px;
+    
+}
+.Formly-Basic-Form-Container .Formly-Header .Formly-Header-logo .span-logo span:nth-of-type(3){
+    width: 20px;
+    height: 10px;
+    background-color: #B3E5FC;
+    border-bottom-right-radius: 50px;
+}
+.Formly-Basic-Form-Container .Formly-Header .Formly-Header-logo .img-log{
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 5px solid #2196F3;
+}
+.Formly-Basic-Form-Container .Formly-Header .Formly-Header-logo .img-log img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.Formly-Basic-Form-Container .Formly-Header .Formly-Header-Title{
+    margin-top: 10px;
+    
+}
+.Formly-Basic-Form-Container .Formly-Header .Formly-Header-Title h3{
+    font-size: 35px;
+    color: #2196F3;
+    font-weight: 700;
+}
+.Formly-Basic-Form-Container .Formly-Swap-Form-Type{
+    width: 100%;
+    text-align: left;
+    padding: 10px;
+    display: flex;
+}
+.Formly-Basic-Form-Container .Formly-Swap-Form-Type .swap-btn{
+    padding:5px 10px;
+    color: #2196F3;
+    background-color: #fff;
+    cursor: pointer;
+    font-size: 14px;
+    border: 1.2px solid #2196F3;
+}
+.Formly-Basic-Form-Container .Formly-Swap-Form-Type .swap-btn:nth-of-type(1){
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    padding-left: 15px;
+    border-right-width: 0px
+}
+.Formly-Basic-Form-Container .Formly-Swap-Form-Type .swap-btn:nth-of-type(2){
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-left-width: 0px
+}
+.Formly-Basic-Form-Container .Formly-Swap-Form-Type .active{
+    background-color: #2196F3;
+    color: #fff;
+}
+.Formly-Basic-Form-Container .Formly-Basic-Forms{
+    width: 100%;
+    padding: 10px;
+}
+.Formly-Basic-Form-Container .Formly-Basic-Forms span{
+    background-color: #fff;
+    border-radius: 0px;
+    border-color: #2196F3;
+    border-right-width: 0px;
+    font-size: 16px;
+    color: #2196F3
+}
+.Formly-Basic-Form-Container .Formly-Basic-Forms input{
+    border-radius: 0px;
+    border-color: #2196F3;
+    border-left-width: 0px; 
+}
+.Formly-Basic-Form-Container .Formly-Basic-Forms input.Formly-password{
+    border-right-width: 0px;
+}
+.Formly-Basic-Form-Container .Formly-Basic-Forms input::placeholder{
+    color: #2196F388
+}
+.Formly-Basic-Form-Container .Formly-Basic-Forms input:focus {
+    color: #2196F3;
+    border-color: #2196F3;
+    outline: 0;
+    box-shadow: none;
+}
+.Formly-Basic-Form-Container .Formly-Basic-Forms .formly-show-password{
+    font-size: 18px;
+    color: #2196F3;
+    cursor: pointer;
+    z-index: 5;
+    border: 1px solid #2196F3;
+    border-left-width: 0px;
+    line-height: 2;
+    padding: 0px 10px;
+}
+.Formly-Basic-Form-Container .Formly-Basic-Forms .Formly-Submit{
+    width: 100%;
+    text-align: center;
+}
+.Formly-Basic-Form-Container .Formly-Basic-Forms .Formly-Submit .Formly-btn{
+    padding: 5px 10px;
+    width: 50%;
+    border: 0px;
+    background-color: #2196F3;
+    color: #fff;
+    cursor: pointer;
+}
+.Formly-Basic-Form-Container .Formly-Basic-Forms .Formly-Forget-Password{
+    margin-top: 20px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+.Formly-Basic-Form-Container .Formly-Basic-Forms .Formly-Forget-Password span{
+    color: #2196F3;
+    cursor: pointer;
+}
+.Formly-Basic-Form-Container .Formly-Basic-Forms .Formly-or-line{
+    margin-top: 25px;
+    position: relative;
+    width: 100%;
+    text-align: center;
+}
+.Formly-Basic-Form-Container .Formly-Basic-Forms .Formly-or-line div{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 90%;
+    height: 1px;
+    background-color: #2196F3
+}
+.Formly-Basic-Form-Container .Formly-Basic-Forms .Formly-or-line div span{
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translate(-50%, 0px);
+    border: 1px solid #2196F3;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    color: #2196F3;
+    line-height: 20px;
+}
+.Formly-Basic-Form-Container .Formly-Basic-Forms .Fomly-Other-login{
+    margin-top: 30px;
+    width: 100%;
+    border-width: 0px;
+    background-color: #fff;
+    padding: 5px 0px;
+    color: #fff;
+    cursor: pointer;
+}
+.Formly-Basic-Form-Container .Formly-Basic-Forms .Google-login{
+    background-color: #f44336;
+}
+.Formly-Basic-Form-Container .Formly-Basic-Forms .Facebook-login{
+    background-color: #5344e3;
+}
+.Formly-Basic-Form-Container .Formly-Basic-Forms .Twitter-login{
+    background-color: #00dcf8;
+}
+.Formly-Basic-Form-Container .Formly-Register-Form{
+    display: none;
+}
+@media(max-width:768px){
+    .Formly-Basic-Form-Container{
+        width: 100%;
+        height: 100%;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        border-radius: 0;
+    } 
+}
+/* End Of [ 1 ] Formly Basic */
+/* [ 2 ] Formly Friends */
+.Formly-Friends{
+    background-color: #2196f3 !important;
+    background: url('../imgs/bg-02.svg') no-repeat center fixed;
+    background-size: contain;
+    padding-top: 25px;
+    padding-top: 25px;
+}
+.Formly-Friends .Formly-Header{
+    width: 100%;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+}
+.Formly-Friends .Formly-Header div{
+    display: inline-block;
+}
+.Formly-Friends .Formly-Header .Formly-Header-logo .span-logo{
+    display: block;
+}
+.Formly-Friends .Formly-Header .Formly-Header-logo .span-logo span{
+    display: block;
+}
+.Formly-Friends .Formly-Header .Formly-Header-logo .span-logo span:nth-of-type(1){
+    width: 60px;
+    height: 25px;
+    background-color: #183e7e;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+.Formly-Friends .Formly-Header .Formly-Header-logo .span-logo span:nth-of-type(2){
+    width: 40px;
+    height: 20px;
+    background-color: #8bc5f3;
+    border-bottom-right-radius: 50px;
+    
+}
+.Formly-Friends .Formly-Header .Formly-Header-logo .span-logo span:nth-of-type(3){
+    width: 20px;
+    height: 10px;
+    background-color: #B3E5FC;
+    border-bottom-right-radius: 50px;
+}
+.Formly-Friends .Formly-Header .Formly-Header-logo .img-log{
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 5px solid #2196F3;
+}
+.Formly-Friends .Formly-Header .Formly-Header-logo .img-log img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.Formly-Friends .Formly-Header .Formly-Header-Title{
+    margin-top: 10px;
+    
+}
+.Formly-Friends .Formly-Header .Formly-Header-Title h3{
+    font-size: 35px;
+    color: #fff;
+    font-weight: 700;
+}
+.Formly-Friend-Form-Container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 25px 25px;
+    border-radius: 20px;
+    background-color: #fff;
+    box-shadow: 0px 3px 6px rgba(0,0,0,0.2);
+    width: 400px;
+}
+.Formly-Friend-Form-Container .Formly-Friend-Form-Header{
+    margin-top: 15px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+.Formly-Friend-Form-Container .Formly-Friend-Form-Header .Formly-Friend-Form-Title{
+    margin-bottom: 10px;
+}
+.Formly-Friend-Form-Container .Formly-Friend-Form-Header .Formly-Friend-Form-Title h3{
+    color: #111;
+    font-size: 25px;
+    font-weight: 700;
+}
+.Formly-Friend-Form-Container .Formly-Friend-Form-Header .Formly-Friend-Form-sub-title{
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+.Formly-Friend-Form-Container .Formly-Friend-Form-Header .Formly-Friend-Form-sub-title span{
+    color: #1115;
+    font-size: 14px;
+}
+.Formly-Friend-Form-Container .Formly-Friend-Forms{
+    width: 100%;
+    padding: 10px;
+}
+.Formly-Friend-Form-Container .Formly-Friend-Forms span{
+    background-color: #fff;
+    border-radius: 0px;
+    border-color: #2196F3;
+    border-right-width: 0px;
+    font-size: 16px;
+    color: #2196F3;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.Formly-Friend-Form-Container .Formly-Friend-Forms input{
+    border-radius: 0px;
+    border-color: #2196F3;
+    border-width: 1px;
+    border-left-width: 0px; 
+    border-radius: 10px
+}
+.Formly-Friend-Form-Container .Formly-Friend-Forms input.Formly-password{
+    border-right-width: 0px;
+}
+.Formly-Friend-Form-Container .Formly-Friend-Forms input::placeholder{
+    color: #2196F388
+}
+.Formly-Friend-Form-Container .Formly-Friend-Forms input:focus {
+    color: #2196F3;
+    border-color: #2196F3;
+    outline: 0;
+    box-shadow: none;
+}
+.Formly-Friend-Form-Container .Formly-Friend-Forms .formly-show-password{
+    font-size: 18px;
+    color: #2196F3;
+    cursor: pointer;
+    z-index: 5;
+    border: 1px solid #2196F3;
+    border-left-width: 0px;
+    line-height: 2;
+    padding: 0px 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.Formly-Friend-Form-Container .Formly-Friend-Forms .Formly-Submit{
+    width: 100%;
+    text-align: center;
+}
+.Formly-Friend-Form-Container .Formly-Friend-Forms .Formly-Submit .Formly-btn{
+    padding: 5px 10px;
+    width: 50%;
+    border: 0px;
+    background-color: #2196F3;
+    color: #fff;
+    cursor: pointer;
+}
+.Formly-Friend-Form-Container .Formly-Friend-Forms .Formly-Forget-Password{
+    margin-top: 20px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+.Formly-Friend-Form-Container .Formly-Friend-Forms .Formly-Forget-Password span{
+    color: #2196F3;
+    cursor: pointer;
+}
+.Formly-Friend-Form-Container .Formly-Friend-Forms .Formly-or-line{
+    margin-top: 25px;
+    position: relative;
+    width: 100%;
+    text-align: center;
+}
+.Formly-Friend-Form-Container .Formly-Friend-Forms .Formly-or-line div{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 90%;
+    height: 1px;
+    background-color: #2196F3
+}
+.Formly-Friend-Form-Container .Formly-Friend-Forms .Formly-or-line div span{
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translate(-50%, 0px);
+    border: 1px solid #2196F3;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    color: #2196F3;
+    line-height: 20px;
+}
+.Formly-Friend-Form-Container .Formly-Friend-Forms .Fomly-Other-login{
+    margin-top: 30px;
+    width: 100%;
+    border-width: 0px;
+    background-color: #fff;
+    padding: 5px 0px;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 20px 0px 20px 0px;
+}
+.Formly-Friend-Form-Container .Formly-Friend-Forms .Google-login{
+    background-color: #f44336;
+}
+.Formly-Friend-Form-Container .Formly-Friend-Forms .Facebook-login{
+    background-color: #5344e3;
+}
+.Formly-Friend-Form-Container .Formly-Friend-Forms .Twitter-login{
+    background-color: #00dcf8;
+}
+.Formly-Friend-Form-Container .Formly-Friend-Forms  .Formly-Friend-swap-Link{
+    margin-top: 25px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.Formly-Friend-Form-Container .Formly-Friend-Forms  .Formly-Friend-swap-Link span{
+    color: #1115;
+    font-size: 14px;
+}
+.Formly-Friend-Form-Container .Formly-Friend-Forms  .Formly-Friend-swap-Link span a{
+    text-decoration: none;
+}
+.Formly-Friend-Form-Container .Formly-Friend-Register-Form{
+    display: none;
+}
+@media(max-width:768px){
+    .Formly-Friend-Form-Container{
+        width: 100%;
+        height: 100%;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        border-radius: 0;
+    } 
+}
+/* [ 2 ] End Formly Friends */
+/* [ 3 ] Formly Flat */
+.Formly-Flat{
+    background-color: #f6f6f6 !important;
+    background: url('../imgs/bg-03-02.svg') no-repeat center fixed , url('../imgs/bg-03-01.svg') no-repeat left center fixed;
+    padding-top: 25px;
+    padding-top: 25px;
+}
+.Formly-Flat-Form-Container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 25px 25px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0px 3px 6px rgba(0,0,0,0.2);
+    width: 400px;
+}
+.Formly-Flat-Form-Container .Formly-Header{
+    width: 100%;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+}
+.Formly-Flat-Form-Container .Formly-Header div{
+    display: inline-block;
+}
+.Formly-Flat-Form-Container .Formly-Header .Formly-Header-logo .span-logo{
+    display: block;
+}
+.Formly-Flat-Form-Container .Formly-Header .Formly-Header-logo .span-logo span{
+    display: block;
+}
+.Formly-Flat-Form-Container .Formly-Header .Formly-Header-logo .span-logo span:nth-of-type(1){
+    width: 60px;
+    height: 25px;
+    background-color: #183e7e;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+.Formly-Flat-Form-Container .Formly-Header .Formly-Header-logo .span-logo span:nth-of-type(2){
+    width: 40px;
+    height: 20px;
+    background-color: #2196F3;
+    border-bottom-right-radius: 50px;
+    
+}
+.Formly-Flat-Form-Container .Formly-Header .Formly-Header-logo .span-logo span:nth-of-type(3){
+    width: 20px;
+    height: 10px;
+    background-color: #B3E5FC;
+    border-bottom-right-radius: 50px;
+}
+.Formly-Flat-Form-Container .Formly-Header .Formly-Header-logo .img-log{
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 5px solid #2196F3;
+}
+.Formly-Flat-Form-Container .Formly-Header .Formly-Header-logo .img-log img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.Formly-Flat-Form-Container .Formly-Header .Formly-Header-Title{
+    margin-top: 10px;
+    
+}
+.Formly-Flat-Form-Container .Formly-Header .Formly-Header-Title h3{
+    font-size: 35px;
+    color: #2196F3;
+    font-weight: 700;
+}
+.Formly-Flat-Form-Container .Formly-Flat-Forms{
+    width: 100%;
+    padding: 10px;
+}
+.Formly-Flat-Form-Container .Formly-Flat-Form-Header{
+    margin-top: 15px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+.Formly-Flat-Form-Container .Formly-Flat-Form-Header .Formly-Flat-Form-Title{
+    margin-bottom: 10px;
+}
+.Formly-Flat-Form-Container .Formly-Flat-Form-Header .Formly-Flat-Form-Title h3{
+    color: #111;
+    font-size: 25px;
+    font-weight: 700;
+}
+.Formly-Flat-Form-Container .Formly-Flat-Form-Header .Formly-Flat-Form-sub-title{
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+.Formly-Flat-Form-Container .Formly-Flat-Form-Header .Formly-Flat-Form-sub-title span{
+    color: #1115;
+    font-size: 14px;
+}
+.Formly-Flat-Form-Container .Formly-Flat-Forms form span{
+    background-color: #fff;
+    border-radius: 0px;
+    border-width: 0px;
+    background-color: #f3f3f3;
+    font-size: 16px;
+    color: #1118;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+.Formly-Flat-Form-Container .Formly-Flat-Forms form input{
+    border-radius: 0px;
+    border-width: 0px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    background-color: #f3f3f3;
+}
+.Formly-Flat-Form-Container .Formly-Flat-Forms input.Formly-password{
+    border-right-width: 0px;
+}
+.Formly-Flat-Form-Container .Formly-Flat-Forms input::placeholder{
+    color: #1115
+}
+.Formly-Flat-Form-Container .Formly-Flat-Forms input:focus {
+    color: #2196F3;
+    border-color: #2196F3;
+    outline: 0;
+    box-shadow: none;
+}
+.Formly-Flat-Form-Container .Formly-Flat-Forms .formly-show-password{
+    font-size: 18px;
+    color: #1118;
+    cursor: pointer;
+    z-index: 5;
+    border-left-width: 0px;
+    line-height: 2;
+    padding: 0px 10px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    background-color: #f3f3f3;
+}
+.Formly-Flat-Form-Container .Formly-Flat-Forms .Formly-Submit{
+    width: 100%;
+    text-align: center;
+}
+.Formly-Flat-Form-Container .Formly-Flat-Forms .Formly-Submit .Formly-btn{
+    padding: 5px 10px;
+    width: 50%;
+    border: 0px;
+    background-color: #2196F3;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 25px;
+}
+.Formly-Flat-Form-Container .Formly-Flat-Forms .Formly-Forget-Password{
+    margin-top: 20px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+.Formly-Flat-Form-Container .Formly-Flat-Forms .Formly-Forget-Password span{
+    color: #2196F3;
+    cursor: pointer;
+    background-color: transparent;
+}
+.Formly-Flat-Form-Container .Formly-Flat-Forms .Formly-or-line{
+    margin-top: 25px;
+    position: relative;
+    width: 100%;
+    text-align: center;
+}
+.Formly-Flat-Form-Container .Formly-Flat-Forms .Formly-or-line div{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 90%;
+    height: 1px;
+    background-color: #2196F3
+}
+.Formly-Flat-Form-Container .Formly-Flat-Forms .Formly-or-line div span{
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translate(-50%, 0px);
+    border: 1px solid #2196F3;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    color: #2196F3;
+    line-height: 20px;
+    background-color: #fff;
+}
+.Formly-Flat-Form-Container .Formly-Flat-Forms .Fomly-Other-login{
+    margin-top: 30px;
+    width: 100%;
+    border-width: 0px;
+    background-color: #fff;
+    padding: 5px 0px;
+    color: #fff;
+    cursor: pointer;
+}
+.Formly-Flat-Form-Container .Formly-Flat-Forms .Google-login{
+    background-color: #f44336;
+}
+.Formly-Flat-Form-Container .Formly-Flat-Forms .Facebook-login{
+    background-color: #5344e3;
+}
+.Formly-Flat-Form-Container .Formly-Flat-Forms .Twitter-login{
+    background-color: #00dcf8;
+}
+.Formly-Flat-Form-Container .Formly-Flat-Forms  .Formly-Flat-swap-Link{
+    margin-top: 25px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.Formly-Flat-Form-Container .Formly-Flat-Forms  .Formly-Flat-swap-Link span{
+    color: #1115;
+    font-size: 14px;
+}
+.Formly-Flat-Form-Container .Formly-Flat-Forms  .Formly-Flat-swap-Link span a{
+    text-decoration: none;
+}
+.Formly-Flat-Form-Container .Formly-Flat-Register-Form{
+    display: none;
+}
+@media(max-width:768px){
+    .Formly-Flat-Form-Container{
+        width: 100%;
+        height: 100%;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        border-radius: 0;
+    } 
+}
+/* [ 3 ] End Of Formly Flat */
+/* [ 4 ] Formly Flowers */
+.Formly-Flowers{ 
+    display: flex;
+}
+.Formly-Flowers > div{
+    flex: 0 0 50%;
+    overflow: hidden;
+}
+.Formly-Flowers .Formly-Flowers-Image-Side{
+    background-color: #FBE8F2;
+}
+.Formly-Flowers .Formly-Flowers-Image-Side img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.Formly-Flowers .Formly-Flowers-Form-Container{
+    padding: 5% 100px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.Formly-Flowers-Form-Container .Formly-Header{
+    width: 100%;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+}
+.Formly-Flowers-Form-Container .Formly-Header div{
+    display: inline-block;
+}
+.Formly-Flowers-Form-Container .Formly-Header .Formly-Header-logo .span-logo{
+    display: block;
+}
+.Formly-Flowers-Form-Container .Formly-Header .Formly-Header-logo .span-logo span{
+    display: block;
+}
+.Formly-Flowers-Form-Container .Formly-Header .Formly-Header-logo .span-logo span:nth-of-type(1){
+    width: 60px;
+    height: 25px;
+    background-color: #DA127D;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+.Formly-Flowers-Form-Container .Formly-Header .Formly-Header-logo .span-logo span:nth-of-type(2){
+    width: 40px;
+    height: 20px;
+    background-color: #F8D3E7;
+    border-bottom-right-radius: 50px;
+    
+}
+.Formly-Flowers-Form-Container .Formly-Header .Formly-Header-logo .span-logo span:nth-of-type(3){
+    width: 20px;
+    height: 10px;
+    background-color: #FFD037;
+    border-bottom-right-radius: 50px;
+}
+.Formly-Flowers-Form-Container .Formly-Header .Formly-Header-logo .img-log{
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 5px solid #2196F3;
+}
+.Formly-Flowers-Form-Container .Formly-Header .Formly-Header-logo .img-log img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.Formly-Flowers-Form-Container .Formly-Header .Formly-Header-Title{
+    margin-top: 10px;
+    
+}
+.Formly-Flowers-Form-Container .Formly-Header .Formly-Header-Title h3{
+    font-size: 35px;
+    color: #DA127D;
+    font-weight: 700;
+}
+.Formly-Flowers-Form-Container .Formly-Flowers-Forms{
+    width: 100%;
+    padding: 10px;
+}
+.Formly-Flowers-Form-Container .Formly-Flowers-Form-Header{
+    margin-top: 15px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+.Formly-Flowers-Form-Container .Formly-Flowers-Form-Header .Formly-Flowers-Form-Title{
+    margin-bottom: 10px;
+}
+.Formly-Flowers-Form-Container .Formly-Flowers-Form-Header .Formly-Flowers-Form-Title h3{
+    color: #111;
+    font-size: 25px;
+    font-weight: 700;
+}
+.Formly-Flowers-Form-Container .Formly-Flowers-Form-Header .Formly-Flowers-Form-sub-title{
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+.Formly-Flowers-Form-Container .Formly-Flowers-Form-Header .Formly-Flowers-Form-sub-title span{
+    color: #1115;
+    font-size: 14px;
+}
+.Formly-Flowers-Form-Container .Formly-Flowers-Forms form span{
+    background-color: #fff;
+    border-radius: 0px;
+    border-width: 0px;
+    background-color: #f3f3f3;
+    font-size: 16px;
+    color: #1118;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+.Formly-Flowers-Form-Container .Formly-Flowers-Forms form input{
+    border-radius: 0px;
+    border-width: 0px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    background-color: #f3f3f3;
+}
+.Formly-Flowers-Form-Container .Formly-Flowers-Forms input.Formly-password{
+    border-right-width: 0px;
+}
+.Formly-Flowers-Form-Container .Formly-Flowers-Forms input::placeholder{
+    color: #1115
+}
+.Formly-Flowers-Form-Container .Formly-Flowers-Forms input:focus {
+    color: #DA127D;
+    border-color: #2196F3;
+    outline: 0;
+    box-shadow: none;
+}
+.Formly-Flowers-Form-Container .Formly-Flowers-Forms .formly-show-password{
+    font-size: 18px;
+    color: #1118;
+    cursor: pointer;
+    z-index: 5;
+    border-left-width: 0px;
+    line-height: 2;
+    padding: 0px 10px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    background-color: #f3f3f3;
+}
+.Formly-Flowers-Form-Container .Formly-Flowers-Forms .Formly-Submit{
+    width: 100%;
+    text-align: center;
+}
+.Formly-Flowers-Form-Container .Formly-Flowers-Forms .Formly-Submit .Formly-btn{
+    padding: 5px 10px;
+    width: 50%;
+    border: 0px;
+    background-color: #DA127D;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 25px;
+}
+.Formly-Flowers-Form-Container .Formly-Flowers-Forms .Formly-Forget-Password{
+    margin-top: 20px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+.Formly-Flowers-Form-Container .Formly-Flowers-Forms .Formly-Forget-Password span{
+    color: #DA127D;
+    cursor: pointer;
+    background-color: transparent;
+}
+.Formly-Flowers-Form-Container .Formly-Flowers-Forms .Formly-or-line{
+    margin-top: 25px;
+    position: relative;
+    width: 100%;
+    text-align: center;
+}
+.Formly-Flowers-Form-Container .Formly-Flowers-Forms .Formly-or-line div{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 90%;
+    height: 1px;
+    background-color: #DA127D
+}
+.Formly-Flowers-Form-Container .Formly-Flowers-Forms .Formly-or-line div span{
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translate(-50%, 0px);
+    border: 1px solid #DA127D;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    color: #DA127D;
+    line-height: 20px;
+    background-color: #fff;
+}
+.Formly-Flowers-Form-Container .Formly-Flowers-Forms .Fomly-Other-login-Container{
+    text-align: center;
+}
+.Formly-Flowers-Form-Container .Formly-Flowers-Forms .Fomly-Other-login-Container .Fomly-Other-login{
+    margin-top: 30px;
+    background-color: #fff;
+    color: #DA127D;
+    cursor: pointer;
+    border: 1px solid #DA127D;
+    border-radius: 50%;
+    line-height: 10px;
+    width: 50px;
+    height: 50px;
+    transition: 0.3s;
+}
+.Formly-Flowers-Form-Container .Formly-Flowers-Forms .Fomly-Other-login-Container .Fomly-Other-login:hover{
+    background-color: #DA127D;
+    color: #fff;
+}
+.Formly-Flowers-Form-Container .Formly-Flowers-Forms  .Formly-Flowers-swap-Link{
+    margin-top: 25px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.Formly-Flowers-Form-Container .Formly-Flowers-Forms  .Formly-Flowers-swap-Link span{
+    color: #1115;
+    font-size: 14px;
+}
+.Formly-Flowers-Form-Container .Formly-Flowers-Forms  .Formly-Flowers-swap-Link span a{
+    text-decoration: none;
+    color: #DA127D
+}
+.Formly-Flowers-Form-Container .Formly-Flowers-Register-Form{
+    display: none;
+}
+.Formly-Flowers-Form-Container .Formly-Flowers-Register-Form{
+    display: none;
+}
+@media(max-width:992px){
+    .Formly-Flowers .Formly-Flowers-Form-Container{
+        padding: 5% 25px;
+    } 
+}
+@media(max-width:768px){
+    .Formly-Flowers .Formly-Flowers-Form-Container{
+        flex: none;
+        width: 100%;
+        height: 100%;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        border-radius: 0;
+        padding: 5% 25px;
+    } 
+    .Formly-Flowers .Formly-Flowers-Image-Side{
+        display: none;
+    }
+}
+/* [ 4 ] End Formly Flowers */
+/* [ 5 ] Formly Office */
+.Formly-Office{ 
+    display: flex;
+}
+.Formly-Office > div{
+    flex: 0 0 50%;
+    overflow: hidden;
+}
+.Formly-Office .Formly-Office-Image-Side{
+    background-color: #FBE8F2;
+}
+.Formly-Office .Formly-Office-Image-Side img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.Formly-Office .Formly-Office-Form-Container{
+    padding: 5% 100px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.Formly-Office-Form-Container .Formly-Header{
+    width: 100%;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+}
+.Formly-Office-Form-Container .Formly-Header div{
+    display: inline-block;
+}
+.Formly-Office-Form-Container .Formly-Header .Formly-Header-logo .span-logo{
+    display: block;
+}
+.Formly-Office-Form-Container .Formly-Header .Formly-Header-logo .span-logo span{
+    display: block;
+}
+.Formly-Office-Form-Container .Formly-Header .Formly-Header-logo .span-logo span:nth-of-type(1){
+    width: 60px;
+    height: 25px;
+    background-color: #001cba;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+.Formly-Office-Form-Container .Formly-Header .Formly-Header-logo .span-logo span:nth-of-type(2){
+    width: 40px;
+    height: 20px;
+    background-color: #03a9f4;
+    border-bottom-right-radius: 50px;
+    
+}
+.Formly-Office-Form-Container .Formly-Header .Formly-Header-logo .span-logo span:nth-of-type(3){
+    width: 20px;
+    height: 10px;
+    background-color: #bde2ff;
+    border-bottom-right-radius: 50px;
+}
+.Formly-Office-Form-Container .Formly-Header .Formly-Header-logo .img-log{
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 5px solid #2196F3;
+}
+.Formly-Office-Form-Container .Formly-Header .Formly-Header-logo .img-log img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.Formly-Office-Form-Container .Formly-Header .Formly-Header-Title{
+    margin-top: 10px;
+    
+}
+.Formly-Office-Form-Container .Formly-Header .Formly-Header-Title h3{
+    font-size: 35px;
+    color: #03a9f4;
+    font-weight: 700;
+}
+.Formly-Office-swap-btn{
+    width: 100%;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    padding: 10px;
+    text-align: left;
+}
+.Formly-Office-swap-btn .Office-swap-btn{
+    display: inline-block;
+    margin:-2px;
+    padding: 10px 40px;
+    border-bottom: 1px solid #03a9f4;
+    border-bottom-left-radius: 3px;
+    cursor: pointer;
+    color: #03a9f4;
+    font-weight: 700;
+}
+.Formly-Office-swap-btn .office-swap-btn-active{
+    border-bottom: 0px;
+    border-bottom-left-radius: 0px;
+    border-top: 2px solid #03a9f4;
+    border-left: 1px solid #03a9f4;
+    border-right: 1px solid #03a9f4;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+.Formly-Office-Form-Container .Formly-Office-Forms{
+    width: 100%;
+    padding: 10px;
+}
+.Formly-Office-Form-Container .Formly-Office-Form-Header{
+    margin-top: 15px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+.Formly-Office-Form-Container .Formly-Office-Form-Header .Formly-Office-Form-Title{
+    margin-bottom: 10px;
+}
+.Formly-Office-Form-Container .Formly-Office-Form-Header .Formly-Office-Form-Title h3{
+    color: #111;
+    font-size: 25px;
+    font-weight: 700;
+}
+.Formly-Office-Form-Container .Formly-Office-Form-Header .Formly-Office-Form-sub-title{
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+.Formly-Office-Form-Container .Formly-Office-Form-Header .Formly-Office-Form-sub-title span{
+    color: #1115;
+    font-size: 14px;
+}
+.Formly-Office-Form-Container .Formly-Office-Forms form span{
+    background-color: #fff;
+    border-radius: 0px;
+    border-width: 0px;
+    background-color: #f3f3f3;
+    font-size: 16px;
+    color: #1118;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+.Formly-Office-Form-Container .Formly-Office-Forms form input{
+    border-radius: 0px;
+    border-width: 0px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    background-color: #f3f3f3;
+}
+.Formly-Office-Form-Container .Formly-Office-Forms input.Formly-password{
+    border-right-width: 0px;
+}
+.Formly-Office-Form-Container .Formly-Office-Forms input::placeholder{
+    color: #1115
+}
+.Formly-Office-Form-Container .Formly-Office-Forms input:focus {
+    color: #03a9f4;
+    outline: 0;
+    box-shadow: none;
+}
+.Formly-Office-Form-Container .Formly-Office-Forms .formly-show-password{
+    font-size: 18px;
+    color: #1118;
+    cursor: pointer;
+    z-index: 5;
+    border-left-width: 0px;
+    line-height: 2;
+    padding: 0px 10px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    background-color: #f3f3f3;
+}
+.Formly-Office-Form-Container .Formly-Office-Forms .Formly-Submit{
+    width: 100%;
+    text-align: center;
+}
+.Formly-Office-Form-Container .Formly-Office-Forms .Formly-Submit .Formly-btn{
+    padding: 5px 10px;
+    width: 50%;
+    border: 0px;
+    background-color: #03a9f4;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 25px;
+}
+.Formly-Office-Form-Container .Formly-Office-Forms .Formly-Forget-Password{
+    margin-top: 20px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+.Formly-Office-Form-Container .Formly-Office-Forms .Formly-Forget-Password span{
+    color: #03a9f4;
+    cursor: pointer;
+    background-color: transparent;
+}
+.Formly-Office-Form-Container .Formly-Office-Forms .Formly-or-line{
+    margin-top: 25px;
+    position: relative;
+    width: 100%;
+    text-align: center;
+}
+.Formly-Office-Form-Container .Formly-Office-Forms .Formly-or-line div{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 90%;
+    height: 1px;
+    background-color: #03a9f4
+}
+.Formly-Office-Form-Container .Formly-Office-Forms .Formly-or-line div span{
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translate(-50%, 0px);
+    border: 1px solid #03a9f4;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    color: #03a9f4;
+    line-height: 20px;
+    background-color: #fff;
+}
+.Formly-Office-Form-Container .Formly-Office-Forms .Fomly-Other-login-Container{
+    text-align: center;
+}
+.Formly-Office-Form-Container .Formly-Office-Forms .Fomly-Other-login-Container .Fomly-Other-login{
+    margin-top: 30px;
+    background-color: #fff;
+    color: #03a9f4;
+    cursor: pointer;
+    border: 1px solid #03a9f4;
+    border-radius: 50%;
+    line-height: 10px;
+    width: 50px;
+    height: 50px;
+    transition: 0.3s;
+}
+.Formly-Office-Form-Container .Formly-Office-Forms .Fomly-Other-login-Container .Fomly-Other-login:hover{
+    background-color: #03a9f4;
+    color: #fff;
+}
+.Formly-Office-Form-Container .Formly-Office-Register-Form{
+    display: none;
+}
+.Formly-Office-Form-Container .Formly-Office-Register-Form{
+    display: none;
+}
+@media(max-width:992px){
+    .Formly-Office .Formly-Office-Form-Container{
+        padding: 5% 25px;
+    } 
+}
+@media(max-width:768px){
+    .Formly-Office .Formly-Office-Form-Container{
+        flex: none;
+        width: 100%;
+        height: 100%;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        border-radius: 0;
+        padding: 5% 25px;
+    } 
+    .Formly-Office .Formly-Office-Image-Side{
+        display: none;
+    }
+}
+@media(max-width:480px){
+    .Formly-Office-swap-btn .Office-swap-btn{
+        padding: 10px 30px;
+    }
+}
+/* [ 5 ] End Formly Office */
+
+/* 
+    ****************************************************************************
+    =======            End Of Magnet Forms                               =======
+    ****************************************************************************
+*/
+
+
+/* 
+    ****************************************************************************
+    =======            Start Of Magnet Framework Classes                 =======
+    ****************************************************************************
+*/
+
+/* Positions Classes*/
+
+    /* [ 1 ][ fixed ] */
+.Magnet-fixed-top{
+    position: fixed;
+    top: 0px;
+}
+.Magnet-fixed-top-left{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+}
+.Magnet-fixed-top-right{
+    position: fixed;
+    top: 0px;
+    right: 0px;
+}
+.Magnet-fixed-bottom{
+    position: fixed;
+    bottom: 0px;
+}
+.Magnet-fixed-bottom-left{
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+}
+.Magnet-fixed-bottom-right{
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+}
+    /* [ 2 ][ absolute ] */
+.Magnet-absolute-top{
+    position: absolute;
+    top: 0px;
+}
+.Magnet-absolute-top-left{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+.Magnet-absolute-top-right{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+.Magnet-absolute-bottom{
+    position: absolute;
+    bottom: 0px;
+}
+.Magnet-absolute-bottom-left{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+}
+.Magnet-absolute-bottom-right{
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
+
+/* Z-index Classes */
+.Magnet-z-1{
+    z-index: 1 !important;
+}
+.Magnet-z-2{
+    z-index: 2 !important;
+}
+.Magnet-z-3{
+    z-index: 3 !important;
+}
+.Magnet-z-4{
+    z-index: 4 !important;
+}
+.Magnet-z-5{
+    z-index: 5 !important;
+}
+.Magnet-z-6{
+    z-index: 6 !important;
+}
+.Magnet-z-7{
+    z-index: 7 !important;
+}
+.Magnet-z-8{
+    z-index: 8 !important;
+}
+.Magnet-z-9{
+    z-index: 9 !important;
+}
+.Magnet-z-10{
+    z-index: 10 !important;
+}
+
+
+/* Backgrounds */
+.Magnet-light{
+    background-color: #fff;
+    color: #111;
+}
+.Magnet-light-gradient{
+    background: linear-gradient(to bottom, #fff 30%, #ffff 100%);
+    background-size: cover;
+    background-position: center center;
+}
+.Magnet-dark{
+    background-color: #282828fa ;
+    color: #fff;
+}
+.Magnet-dark-gradient{
+    background: linear-gradient(to bottom, #282828 30%, #282828 100%);
+    background-size: cover;
+    background-position: center center;
+}
+
+/* Navigrations Shadow*/
+.Magnet-light-nav-shadow-top{
+    box-shadow: 0px -1px 6px rgba(32,33,36,0.28);
+}
+.Magnet-light-nav-shadow-bottom{
+    box-shadow: 0px 1px 6px rgba(32,33,36,0.28);
+}
+.Magnet-light-nav-shadow-left{
+    box-shadow: -1px 0px 6px rgba(32,33,36,0.28);
+}
+.Magnet-light-nav-shadow-right{
+    box-shadow: 1px 0px 6px rgba(32,33,36,0.28);
+}
+.Magnet-dark-nav-shadow-top{
+    box-shadow: 0px -1px 6px #111;
+}
+.Magnet-dark-nav-shadow-bottom{
+    box-shadow: 0px 1px 6px #111;
+}
+.Magnet-dark-nav-shadow-left{
+    box-shadow: -1px 0px 6px #111;
+}
+.Magnet-dark-nav-shadow-right{
+    box-shadow: 1px 0px 6px #111;
+}
+
+/* Images Backgrounds Colors */
+.Magnet-Img-Background-red{
+    background: linear-gradient(to bottom, #fd0054 30%, #fd0054 100%);
+    background-size: cover;
+    background-position: center center;
+}
+
+/* Magnet Borders */
+.Magnet-border-1{
+    border: 1px solid rgba(0, 0, 0, 0.3);
+}
+.Magnet-border-2{
+    border: 2px solid rgba(0, 0, 0, 0.3);
+}
+.Magnet-border-3{
+    border: 3px solid rgba(0, 0, 0, 0.3);
+}
+.Magnet-border-4{
+    border: 4px solid rgba(0, 0, 0, 0.3);
+}
+.Magnet-border-5{
+    border: 5px solid rgba(0, 0, 0, 0.3);
+}
+/* Top + Bottom Borders */
+.Magnet-top-bottom-border-1{
+    border-top: 1px solid rgba(0, 0, 0, 0.3);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+.Magnet-top-bottom-border-2{
+    border-top: 2px solid rgba(0, 0, 0, 0.3);
+    border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+}
+.Magnet-top-bottom-border-3{
+    border-top: 3px solid rgba(0, 0, 0, 0.3);
+    border-bottom: 3px solid rgba(0, 0, 0, 0.3);
+}
+.Magnet-top-bottom-border-4{
+    border-top: 4px solid rgba(0, 0, 0, 0.3);
+    border-bottom: 4px solid rgba(0, 0, 0, 0.3);
+}
+.Magnet-top-bottom-border-5{
+    border-top: 5px solid rgba(0, 0, 0, 0.3);
+    border-bottom: 5px solid rgba(0, 0, 0, 0.3);
+}
+/* Left + Right Borders */
+.Magnet-left-right-border-1{
+    border-left: 1px solid rgba(0, 0, 0, 0.3);
+    border-right: 1px solid rgba(0, 0, 0, 0.3);
+}
+.Magnet-left-right-border-2{
+    border-left: 2px solid rgba(0, 0, 0, 0.3);
+    border-right: 2px solid rgba(0, 0, 0, 0.3);
+}
+.Magnet-left-right-border-3{
+    border-left: 3px solid rgba(0, 0, 0, 0.3);
+    border-right: 3px solid rgba(0, 0, 0, 0.3);
+}
+.Magnet-left-right-border-4{
+    border-left: 4px solid rgba(0, 0, 0, 0.3);
+    border-right: 4px solid rgba(0, 0, 0, 0.3);
+}
+.Magnet-left-right-border-5{
+    border-left: 5px solid rgba(0, 0, 0, 0.3);
+    border-right: 5px solid rgba(0, 0, 0, 0.3);
+}
+
+/* List Border Colors */
+.Magnet-List-Left-border-red{
+    border-left: 5px solid #fd0054;
+}
+
+/* Lists Shadow */
+.Magnet-List-dark-shadow:hover,
+.Magnet-List-light-shadow:hover{
+    border-top: 1px solid rgba(0,0,0,0.3);
+    letter-spacing: 0.25px;
+}
+.Magnet-List-dark-shadow:hover{
+    box-shadow: 0px 3px 2px #111;
+}
+.Magnet-List-light-shadow:hover{
+    box-shadow: 0px 3px 2px #ccc;
+}
+
+/* Magnet Text align */
+.Magnet-center-text{
+    text-align: center;
+}
+.Magnet-right-text{
+    text-align:right
+}
+.Magnet-left-text{
+    text-align:left
+}
+.Magnet-justify-text{
+    text-align:justify
+}
+.Magnet-justify-all-text{
+    text-align:justify-all
+}
+.Magnet-end-text{
+    text-align:end
+}
+
+/* Counter Background Color*/
+.Magnet-Counter-BGColor-red{
+    background-color: #fd0054;
+    color: #fff;
+}
+
+/* Magnet Floating */
+.Magnet-float-left{
+    float: left;
+}
+.Magnet-float-right{
+    float:right;
+}
+.Magnet-float-none{
+    float: none;
+}
+
+
+/* Colors */
+.Magnet-color-light{
+    color: #fff
+}
+.Magnet-color-dark{
+    color: #111
+}
+.Magnet-color-red{
+    color:#fd0054;
+}
+.Magnet-color-Summer-red{
+    color:#ff8080;
+}
+.Magnet-color-Summer-green{
+    color:#32ff6a;
+}
+.Magnet-color-Summer-blue{
+    color:#28c3d4;
+}
+.Magnet-color-Summer-pink{
+    color:#fb3569;
+}
+.Magnet-color-Summer-orange{
+    color:#f05a28;
+}
+.Magnet-color-Summer-primary{
+    color:#498eb9;
+}
+.Magnet-color-Summer-info{
+    color:#11d3bc;
+}
+.Magnet-color-Summer-dark{
+    color:#444444;
+}
+.Magnet-color-Summer-light{
+    color:#fffde1;
+}
+.Magnet-color-Summer-warning{
+    color:#ffed78;
+}
+
+/* display */
+.Magnet-inline{
+    display: inline;
+}
+.Magnet-block{
+    display: block;
+}
+.Magnet-inline-block{
+    display: inline-block;
+}
+.Magnet-flex{
+    display:flex
+}
+.Magnet-inline-flex{
+    display:inline-flex
+}
+.Magnet-none{
+    display:none
+}
+
+
+
+.GenSuccess{
+    color: #28a745 !important;
+}
+
+/* Reset HTML Elements Value */
+.Magnet-link{
+    text-decoration: none;
+}
+
+/* 
+    ****************************************************************************
+    =======              End Of Magnet Framework Classes                 =======
+    ****************************************************************************
+*/
+
